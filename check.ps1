@@ -304,10 +304,7 @@ Write-Host "`n$space╭───────────────────
 Write-Host "$space│            SCAN COMPLETE            │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
 
-# Print the magenta border and text
-Write-Host "$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
-Write-Host "$space│          Discord @641               │" -ForegroundColor $yellow
-Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
+
 
 
 
