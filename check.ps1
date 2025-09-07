@@ -303,14 +303,3 @@ $space = " " * 12  # Increased the number of spaces for more right alignment
 Write-Host "`n$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
 Write-Host "$space│            SCAN COMPLETE            │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
-
-
-
-
-
-
-
-
-
-
-
